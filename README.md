@@ -1,4 +1,5 @@
-Sito esame
+Sito Web esame
+Corso: Web Design
 Noemi Zanforlin-Graphic Design
 ELEMENTI PRINCIPALI
 Nome azienda:Fairytale Weddings
