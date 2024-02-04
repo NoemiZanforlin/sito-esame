@@ -1,4 +1,5 @@
-<Nome azienda:Fairytale Weddings>
+<ol>
+</li>Nome azienda:Fairytale Weddings</li>
 Chi siamo: Società che lavora all'organizzazione di matrimoni
 Servizi offerti: ci occupiamo di pianificare cerimonie per nozze
 Lavoriamo alla progettazione del matrimonio perfetto
