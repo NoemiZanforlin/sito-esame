@@ -1,4 +1,4 @@
-<h6><b></b>Elementi principali</h6>
+<h5><b></b>Elementi principali</h5>
 <li>Fairytale Weddings</a></li>
 <li>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile" </a></li>
 <li>La nostra attività si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partedno dagli addobbi, della chiesa e della location di festa, al fotografo, persona che fa parte del nostro team. Ci occipiamo degli inviti, abiti delle damigelle...</a></li>
