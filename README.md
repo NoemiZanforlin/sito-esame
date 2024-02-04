@@ -1,6 +1,8 @@
 <li>Fairytale Weddings</a></li>
 <li>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile" </a></li>
 <li>La nostra attività si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partedno dagli addobbi, della chiesa e della location di festa, al fotografo, persona che fa parte del nostro team. Ci occipiamo degli inviti, abiti delle damigelle...</a></li>
+<li>Sul nostro blog<a href=https://poetic-meerkat-ed4dd7.netlify.app/"neyli></a></li>
+<li>TESTIMONIAL</a></li>
     <li class="active"><a href="#">Modelli</a></li>
     <li><a href="#">Servizi</a></li>
     <li><a href="#">Dove siamo</a></li>
