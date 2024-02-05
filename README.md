@@ -12,7 +12,7 @@
 
 <li>TESTIMONIAL</a></li>
 
-</p>Per maggiori informazioni è possibile contattarci alle segeunti voci</p>
+</p>Per maggiori informazioni è possibile contattarci alle segeunti voci:</p>
      <li>al nostro indirizzo mail: fairytaleweddings@gmail.com</a></li>
      <li>al numero: +39 1234567890</a></li>
      <li>puoi anche trovarci a Torino, in via Giulio Cesare n° 8</a></li>
