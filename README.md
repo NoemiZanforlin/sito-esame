@@ -10,7 +10,7 @@
 <h3><b></b>Blog e notizie</h3>
 </p>Sul nostro blog e possibile trovare tutte le nostre offerte e i nostri servizi. All'interno, è anche possibile trovare alcuni tra i nostri lavori. Questa partocolare pagina viene aggiornata in maniera da poter fornire una visione a 360° del nostro lavoro, ai nostri clienti e a chi vuole conoscere meglio il nostro servizio</p>
 
-<li>TESTIMONIAL</a></li>
+<h3><b></b>Testimonial</h3>
 
 </p>Per maggiori informazioni è possibile contattarci alle segeunti voci:</p>
      <li>al nostro indirizzo mail: fairytaleweddings@gmail.com</a></li>
