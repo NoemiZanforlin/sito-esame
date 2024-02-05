@@ -1,4 +1,4 @@
-<h6><em></b>Elementi principali</h6>
+<h1><b></b>Elementi principali</h1>
 <li>ACME Novara : anno accademico 2023-2024</a></li>
 <li>Corso: WebDesign</a></li>
 <li>Studente: Noemi Zanforlin</a></li>
