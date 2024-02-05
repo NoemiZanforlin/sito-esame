@@ -3,11 +3,11 @@
 <li>Corso: WebDesign</a></li>
 <li>Studente: Noemi Zanforlin</a></li>
 <li>Docente: Matteo Baccan</a></li>
-<h5><b></b>Elementi principali</h5>
-<li>Fairytale Weddings</a></li>
+<h3><b></b>Elementi principali</h3>
+<li>Fairytale Weddings, si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partedno dagli addobbi, della chiesa e della location di festa, al fotografo, persona che fa parte del nostro team. Ci occipiamo degli inviti, abiti delle damigelle...</a></li>
 <li>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile" </a></li>
-<li>La nostra attività si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partedno dagli addobbi, della chiesa e della location di festa, al fotografo, persona che fa parte del nostro team. Ci occipiamo degli inviti, abiti delle damigelle...</a></li>
-<h5><b></b>Blog e notizie</h5>
+
+<h3><b></b>Blog e notizie</h3>
 <li>Sul nostro blog e possibile trovare tutte le nostre offerte e i nostri servizi. All'interno, è anche possibile trovare alcuni tra i nostri lavori. Questa partocolare pagina viene aggiornata in maniera da poter fornire una visione a 360° del nostro lavoro, ai nostri clienti e a chi vuole conoscere meglio il nostro servizio </a></li>
 
 <li>TESTIMONIAL</a></li>
@@ -16,6 +16,6 @@
      </p>al nostro indirizzo mail: fairytaleweddings@gmail.com</a></li>
      </p>al numero: +39 1234567890</a></li>
      </p>puoi anche trovarci a Torino, in via Giulio Cesare n° 8</a></li>
-<h5><b></b>Caratteristiche</h5>
+<h3><b></b>Caratteristiche</h3>
 <li>RESPONSIVE</a></li>
 <li>Esente da errori sintattici</a></li>
