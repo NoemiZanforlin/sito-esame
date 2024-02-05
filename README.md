@@ -4,7 +4,7 @@
 <li>Studente: Noemi Zanforlin</a></li>
 <li>Docente: Matteo Baccan</a></li>
 <h3><b></b>Elementi principali</h3>
-<li>Fairytale Weddings, si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partedno dagli addobbi, della chiesa e della location di festa, al fotografo, persona che fa parte del nostro team. Ci occipiamo degli inviti, abiti delle damigelle...</a></li>
+<p>Fairytale Weddings, si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partedno dagli addobbi, della chiesa e della location di festa, al fotografo, persona che fa parte del nostro team. Ci occipiamo degli inviti, abiti delle damigelle...</a></p>
 <li>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile" </a></li>
 
 <h3><b></b>Blog e notizie</h3>
