@@ -8,7 +8,7 @@
 </p>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile"</p>
 
 <h3><b></b>Blog e notizie</h3>
-</p>Sul nostro blog e possibile trovare tutte le nostre offerte e i nostri servizi. All'interno, è anche possibile trovare alcuni tra i nostri lavori. Questa partocolare pagina viene aggiornata in maniera da poter fornire una visione a 360° del nostro l avoro, ai nostri clienti e a chi vuole conoscere meglio il nostro servizio</p>
+</p>Sul nostro blog e possibile trovare tutte le nostre offerte e i nostri servizi. All'interno, è anche possibile trovare alcuni tra i nostri lavori. Questa partocolare pagina viene aggiornata in maniera da poter fornire una visione a 360° del nostro lavoro, ai nostri clienti e a chi vuole conoscere meglio il nostro servizio</p>
 
 <h3><b></b>Testimonial</h3>
 
