@@ -1,3 +1,21 @@
 body{
-  background-color: #E6E6FA;
+   background-color: #e6e6fa;
+  
+}
+
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: yellow;
+	border: 1px solid black;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: #e6e6fa;
+}
+
+.navbar a{
+	margin-left: 10px;
+	margin-right: 10px;
 }
