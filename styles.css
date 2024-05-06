@@ -4,7 +4,8 @@ body
   
 }
 
-.navbar{
+.navbar
+{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,11 +17,13 @@ body
 
 }
 
-.navbar a{
+.navbar a
+{
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.topnav {
+.topnav 
+{
   overflow: hidden;
   background-color: #e9e9e9;
 }
