@@ -27,3 +27,10 @@ body
   overflow: hidden;
   background-color: #e9e9e9;
 }
+
+.logo
+{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
