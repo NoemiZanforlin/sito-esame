@@ -38,5 +38,8 @@ header {
 
 .logo {
     max-width: 100%;
-    height: auto;
+    height: auto
+    display: block;t
+    text: align.;
+}
 
