@@ -44,7 +44,7 @@ body{
 }
 .menu li a{
 	/*Qui aggiungi le modifiche per le voci del menu che sono link*/
-	color: white;/*Colore base*/
+	color: #e8e1d7;/*Colore base*/
 	text-decoration: none;/*Rimuovi la sottolineatura*/
 }
 .menu li a:hover{
@@ -72,7 +72,7 @@ body{
 	align-items: center;/*Centra verticalemente la sezione*/
 }
 .sezione{
-	border: 1px solid blue;
+	border: 1px solid white;
 	top: 0;/*Attaccato sopra*/
 	left: 0;/*Attaccato a sinistra*/
 	right: 0;/*Attaccato a destra*/
