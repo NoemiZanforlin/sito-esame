@@ -54,6 +54,7 @@ body{
 .barra-menu a{
 	color: #4b0082;/*Colore base*/
 	text-decoration: none;/*Rimuovi la sottolineatura*/
+	font-family: "Times New Roman", Times, serif;
 	font-size: 1.5rem;
 }
 .barra-menu a:hover{
