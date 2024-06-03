@@ -11,7 +11,7 @@ body{
 	/*In questo caso 3rem = 3x18 = 54*/
 }
 .header{
-    background-color: white;/*Sfondo barra*/
+    background-color: #faebd7; /*Sfondo barra*/
 	top: 0;/*Attaccato sopra*/
 	left: 0;/*Attaccato a sinistra*/
 	right: 0;/*Attaccato a destra*/
