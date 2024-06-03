@@ -3,88 +3,121 @@ body{
     padding: 0;
 }
 .header{
-    background-color: #8a2be2;/*Sfondo barra*/
 	top: 0;/*Attaccato sopra*/
 	left: 0;/*Attaccato a sinistra*/
 	right: 0;/*Attaccato a destra*/
-	padding-top: 10px;/*Contenuto staccato da sopra*/
-	padding-bottom: 10px;/*Contenuto staccato da sotto*/
+	padding-top: 0px;/*Contenuto staccato da sopra*/
+	padding-bottom: 0px;/*Contenuto staccato da sotto*/
 	
 	display: flex;
     justify-content: center;/*Centra orizzontalmente il menu*/
     align-items: center;/*Centra verticalemente il menu*/
+	flex-direction: column;
 	
-    height: 50px;/*Altezza che puoi regolare a piacimento*/
+    height: 150px;/*Altezza che puoi regolare a piacimento*/
 	width: 100%;/*Larghezza 100%*/
 	position: fixed;
-
-	
 }
-.logo{
-	/*Qua modifichi il logo dentro il menu*/
-	font-size: 3rem;
-	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
-	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
-	/*In questo caso 3rem = 3x18 = 54*/
+.barra-logo{
+	flex: 1;
+	height: 100px;
+	width: 100vw;
+	background-color: #FF7F50;
+	display: flex;
+	justify-content: center;/*Centra orizzontalmente il menu*/
+    align-items: center;/*Centra verticalemente il menu*/
 }
-.menu{
+.barra-menu{
+	margin: 0;
+    padding: 0;/*Nessuno spazio aggiuntivo*/
+	flex: 1;
+	height: 50px;
+	width: 100vw;
+	border: 1px solid red;
+	background-color: #FF4500;
+	display: flex;
+	justify-content: center;/*Centra orizzontalmente il menu*/
+    align-items: center;/*Centra verticalemente il menu*/
+}
+.barra-menu ul{
+	list-style: none;/*Togli i punti elenco*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;/*Centra orizzontalmente il menu*/
+    align-items: center;/*Centra verticalemente il menu*/
 	margin: 0;/*Contenuto del menu appiccicato ai bordi dell'header*/
 	margin-left: 500px;/*Contenuto del menu staccato da sinitra*/
 	margin-right: 500px;/*Contenuto del menu staccato da destra*/
-    padding: 0;/*Nessuno spazio aggiuntivo*/
-	list-style: none;/*Togli i punti elenco*/
-	flex: 1;/*Occupa tutto lo spazio entro i margini*/
-	width: 100%;/*Larghezza al 100% del contenitore*/
-	display: flex;
-	justify-content: space-between;/*Centra orizzontalmente i link del menu ma con dello spazio in mezzo*/
-	align-items: center;/*Centra verticalemente i link del menu*/
+	padding: 0;
+	gap: 20px;
 }
-.menu li{
-	/*Qui aggiungi le modifiche per tutte le voci del menu*/
-}
-.menu li a{
-	/*Qui aggiungi le modifiche per le voci del menu che sono link*/
-	color: #f8f8f8;/*Colore base*/
+.barra-menu a{
+	color: #00FF00;/*Colore base*/
 	text-decoration: none;/*Rimuovi la sottolineatura*/
+	font-size: 1.5rem;
 }
-.menu li a:hover{
-	/*Qui aggiungi le modifiche per i link quando il mouse è sopra di essi*/
-	color: white;/*Colore se il mouse è sopra*/
-}
-.logo{
-	/*Qua modifichi il logo dentro il menu*/
-	font-size: 3rem;
-	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
-	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
-	/*In questo caso 3rem = 3x18 = 54*/
+.barra-menu a:hover{
+	color: blue;
 }
 .content{
 	/*Questo conterrà le sezioni del corpo*/
-    padding: 20px;/*Distanza del contenuto dai margini*/
+    padding: 0px;/*Distanza del contenuto dai margini*/
     top: 0;/*Attaccato sopra*/
 	left: 0;/*Attaccato a sinistra*/
 	right: 0;/*Attaccato a destra*/
-	margin-top: 50px;/*Con questo decidi quanto allontanarlo dal menu. Se il menu è alto 50px e qui metti 50px, allora sarà subito attaccato sotto*/
-	border: 1px solid white;
+	margin: 0;
+	margin-top: 150px;/*Con questo decidi quanto allontanarlo dal menu. Se il menu è alto 50px e qui metti 50px, allora sarà subito attaccato sotto*/
 	width: 100%;
 	display: flex;
 	flex-direction: column;/*Mette in colonna le sezioni*/
 	align-items: center;/*Centra verticalemente la sezione*/
 }
 .sezione{
-	border: 1px solid white;
 	top: 0;/*Attaccato sopra*/
 	left: 0;/*Attaccato a sinistra*/
 	right: 0;/*Attaccato a destra*/
 	padding: 0px;
-	height: calc(100vh - 100px);/*Calcola l'altezza facendo il 100% dello schermo meno tot px*/
+	padding-top: 150px;
+	height: calc(100vh - 150px);/*Calcola l'altezza facendo il 100% dello schermo meno tot px*/
 	width: 90vw;
-	color: #FFFFFF;
 	font-size: 15px;
+	border: 1px solid black;
 }
-#s1{
-	/*Qui modifichi solo la sezione 1 che ha ID = s1*/
-	background-image: url('wedding-invitation-card.jpg');
+#home{
+	text-align: center;
+	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
+}
+#chisiamo{
+	text-align: center;
+	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
+    background-position: center; /* Centra l'immagine di sfondo */
+}
+#servizi{
+	text-align: center;
+	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
+    background-position: center; /* Centra l'immagine di sfondo */
+}
+#dovesiamo{
+	text-align: center;
+	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
+    background-position: center; /* Centra l'immagine di sfondo */
+}
+#contatti{
+	text-align: center;
+	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
+    background-position: center; /* Centra l'immagine di sfondo */
+}
+h1{
+	color: red;
+	font-size: 3rem;
+}
+p{
+	color: white;
+	font-size: 1.2rem;
 }
