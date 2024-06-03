@@ -22,7 +22,7 @@ body{
 	flex: 1;
 	height: 100px;
 	width: 100vw;
-	background-color: #FF7F50;
+	background-color: white;
 	display: flex;
 	justify-content: center;/*Centra orizzontalmente il menu*/
     align-items: center;/*Centra verticalemente il menu*/
@@ -34,7 +34,7 @@ body{
 	height: 50px;
 	width: 100vw;
 	border: 1px solid red;
-	background-color: #FF4500;
+	background-color: #e6e6fa;
 	display: flex;
 	justify-content: center;/*Centra orizzontalmente il menu*/
     align-items: center;/*Centra verticalemente il menu*/
@@ -85,36 +85,36 @@ body{
 }
 #home{
 	text-align: center;
-	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-image: url('wedding-invitation-card.jpg');
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
 #chisiamo{
 	text-align: center;
-	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-image: url('wedding-invitation-card.jpg');
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
 #servizi{
 	text-align: center;
-	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-image: url('wedding-invitation-card.jpg');
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
 #dovesiamo{
 	text-align: center;
-	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-image: url('wedding-invitation-card.jpg');
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
 #contatti{
 	text-align: center;
-	background-image: url('https://wallpaperaccess.com/full/235592.jpg');
+	background-image: url('wedding-invitation-card.jpg');
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
 h1{
-	color: red;
+	color: #e6e6fa;
 	font-size: 3rem;
 }
 p{
