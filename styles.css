@@ -33,7 +33,7 @@ body{
 	flex: 1;
 	height: 50px;
 	width: 100vw;
-	border: 1px solid red;
+	border: 1px solid white;
 	background-color: #e6e6fa;
 	display: flex;
 	justify-content: center;/*Centra orizzontalmente il menu*/
@@ -52,7 +52,7 @@ body{
 	gap: 20px;
 }
 .barra-menu a{
-	color: #00FF00;/*Colore base*/
+	color: #4b0082;/*Colore base*/
 	text-decoration: none;/*Rimuovi la sottolineatura*/
 	font-size: 1.5rem;
 }
