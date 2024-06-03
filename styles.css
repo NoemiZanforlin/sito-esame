@@ -6,6 +6,14 @@ body {
     margin: 0;
     padding: 0;
 }
+body {
+   
+    background-image: url('tuo_percorso/immagine-di-sfondo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
 
 header {
     background-color: #8a2be2; /* lilla */
