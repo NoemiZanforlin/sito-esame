@@ -2,6 +2,14 @@ body{
     margin: 0;
     padding: 0;
 }
+.logo{
+	/*Qua modifichi il logo dentro il menu*/
+	font-size: 3rem;
+	align-items: center;
+	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
+	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
+	/*In questo caso 3rem = 3x18 = 54*/
+}
 .header{
     background-color: white;/*Sfondo barra*/
 	top: 0;/*Attaccato sopra*/
@@ -20,13 +28,7 @@ body{
 
 	
 }
-.logo{
-	/*Qua modifichi il logo dentro il menu*/
-	font-size: 3rem;
-	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
-	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
-	/*In questo caso 3rem = 3x18 = 54*/
-}
+
 .menu{
 	margin: 0;/*Contenuto del menu appiccicato ai bordi dell'header*/
 	margin-left: 500px;/*Contenuto del menu staccato da sinitra*/
