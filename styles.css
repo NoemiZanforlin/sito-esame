@@ -2,16 +2,8 @@ body{
     margin: 0;
     padding: 0;
 }
-.logo{
-	/*Qua modifichi il logo dentro il menu*/
-	font-size: 3rem;
-	align-items: center;
-	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
-	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
-	/*In questo caso 3rem = 3x18 = 54*/
-}
 .header{
-    background-color: #faebd7; /*Sfondo barra*/
+    background-color: #8a2be2;/*Sfondo barra*/
 	top: 0;/*Attaccato sopra*/
 	left: 0;/*Attaccato a sinistra*/
 	right: 0;/*Attaccato a destra*/
@@ -28,7 +20,13 @@ body{
 
 	
 }
-
+.logo{
+	/*Qua modifichi il logo dentro il menu*/
+	font-size: 3rem;
+	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
+	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
+	/*In questo caso 3rem = 3x18 = 54*/
+}
 .menu{
 	margin: 0;/*Contenuto del menu appiccicato ai bordi dell'header*/
 	margin-left: 500px;/*Contenuto del menu staccato da sinitra*/
@@ -46,13 +44,20 @@ body{
 }
 .menu li a{
 	/*Qui aggiungi le modifiche per le voci del menu che sono link*/
-	color: #e8e1d7;/*Colore base*/
+	color: #f8f8f8;/*Colore base*/
 	text-decoration: none;/*Rimuovi la sottolineatura*/
 }
 .menu li a:hover{
 	/*Qui aggiungi le modifiche per i link quando il mouse è sopra di essi*/
 	color: white;/*Colore se il mouse è sopra*/
-
+}
+.logo{
+	/*Qua modifichi il logo dentro il menu*/
+	font-size: 3rem;
+	/*Il rem è un'unità di misura automatica che moltiplicai il valore base dei caratteri per il numero vicino*/
+	/*Se da nessuna parte hai definito la dimensione di base per i caratteri, il browser prende quella di default che è 16px.*/
+	/*In questo caso 3rem = 3x18 = 54*/
+}
 .content{
 	/*Questo conterrà le sezioni del corpo*/
     padding: 20px;/*Distanza del contenuto dai margini*/
