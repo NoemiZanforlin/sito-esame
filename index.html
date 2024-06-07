@@ -4,22 +4,40 @@
 		<meta charset="UTF-8">
 		<title>Fairytale Weddings</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 	</head>
 	<body>
 		<!--Intestazione-->
 		<div class="header">
-			<!--Barra per il logo-->
+			<!--Barra per il logo
 			<div class="barra-logo">
 				<img src="logo.png" height="100px">
-			</div>
-			<!--Barra per il menu-->
+			</div>-->
+			<!--Barra per il menu
 			<div class="barra-menu">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#chisiamo">Chi Siamo</a></li>
 					<li><a href="#servizi">Servizi</a></li>
-					<li><a href="#dovesiamo">Dove siamo</a></li>
+					<li><a href="#inostrilavori">I nostri lavori</a></li>
+					<li><a href="#contatti">Dove siamo</a></li>
+					<li><a href="#dovesiamo">Contatti</a></li>
+				
+				</ul>
+			</div>-->
+			<div class="barra-menu">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#chisiamo">Chi Siamo</a></li>
+					<li><a href="#servizi">Servizi</a></li>
+				</ul>
+				<ul>
+					<img src="logo.png" height="100px">
+                </ul>				
+				<ul>
+					<li><a href="#lavori">Lavori</a></li>
 					<li><a href="#contatti">Contatti</a></li>
+					<li><a href="#dovesiamo">Dove siamo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -28,44 +46,59 @@
 			<!--Sezione Home-->
 			<div class="sezione" id="home">
 				<h1>Home</h1>
-				<p>Questa è la Home.</p>
+				<div class="paragrafo">L'amour: crea con noi la cerimonia perfetta per voi!</div>
 			</div>
 			<!--Sezione Chi siamo-->
 			<div class="sezione" id="chisiamo">
-				<h1>Chi siamo</h1>
-				<p>Qui scrivo chi siamo.</p>
+				<div class="destra">
+					<h2>Chi siamo</h2>
+				</div>
+				<div class="sinistra">
+					<p>L'amour è azieda a conduzione familiare.<br>Da veniticinque anni lavora alla cerimonia perfetta per voi!<br>
+					Ogni piccolo dettaglio verrà curato nei minimi dettagli. <br>
+					Il nostro team ascolterà la vostra ì idea di matrimonio ideale, per arrivare a costruire una vera e propria favola. Ci occuperemo di ogni cosa, dalla location alla musica che preferirete.</p>
+				</div>
 			</div>
 			<!--Sezione Servizi-->
 			<div class="sezione" id="servizi">
 				<h1>Servizi</h1>
 				<p>Questi sono i nostri servizi.</p>
 			</div>
-			<!--Sezione Dove siamo-->
-			<div class="sezione" id="dovesiamo">
-				<h1>Dove siamo</h1>
-				<p>Ci troviamo in Italia, nel pianeta Terra,<br>nel sistema solare, nella galassia chiamata Via Lattea.</p>
+			<!--Sezione lavori-->
+			<div class="sezione" id="lavori">
+				<h1>Lavori</h1>
+				<p>Questi sono i nostri lavori.</p>
 			</div>
 			<!--Sezione Contatti-->
 			<div class="sezione" id="contatti">
 				<h1>Contatti</h1>
-				<p>Ci puoi contattare qui.</p>
+        <div class="container">
+            <p>Se sei interessato ad un nostro servizio, e desideri richiedere alcune informazioni, non esitare a contattarci! Noi saremo ben disponibili nel risponderti e aiutarti,<br>nella preparazione della tua cerimonia perfetta.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+	</div>
+    </section>
+	<!--Sezione Dove siamo-->
+			<div class="sezione" id="dovesiamo">
+				<div class="ds"> Dove siamo</div>
+				<div class="ds2"> Ci troviamo in Italia, nel pianeta Terra,<br>nel sistema solare, nella galassia chiamata Via Lattea.</div>
+				<a href="https://maps.app.goo.gl/sabV5ackjYNYTDMeA"><i class="fa-solid fa-map-location-dot"></i></a>
 			</div>
-		</div>
-		<div class="slider-container">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span>
-        <div class="image-container">
-            <img src="long-white-table-stands-white-tents-sand-beach.jpg" class="slider-image" />
-            <img src="women-making-preparations-wedding.jpg" class="slider-image" />
-            <img src="3.jpg" class="slider-image" />
-        </div>
-        <div class="button-container">
-            <a href="#slider-image-1" class="slider-change"></a>
-            <a href="#slider-image-2" class="slider-change"></a>
-            <a href="#slider-image-3" class="slider-change"></a>
-        </div>
-    </div>
+			
 	</body>
 </html>	
 <!--
@@ -81,6 +114,7 @@
 	--> 
 	<!--
     <img src="wedding-invitation-card.jpg1920x1080">
+	<img src="pexels-karolina-grabowska-4622890.jpg">
 	
 
 	</p>Fairytale Weddings lavora alla cerimonia perfetta per voi!
