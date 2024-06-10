@@ -54,7 +54,7 @@ body{
 	gap: 20px;
 }
 .barra-menu a{
-	color: white;/*Colore base*/
+	color: #8b008b;/*Colore base*/
 	text-decoration: none;/*Rimuovi la sottolineatura*/
 	font-family: "Times New Roman", Times, serif;
 	font-size: 1.0rem;
@@ -96,7 +96,7 @@ body{
 }
 #chisiamo{
 	text-align: left;
-    background-color: #f8f8ff;  
+    background-image: url('foto/team.jpg');  
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 	display: flex;
@@ -113,13 +113,13 @@ body{
 }
 #servizi{
 	text-align: center;
-	background-image: url('wedding-invitation-card.jpg');
+	background-color:#e6e6fa;
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
-#lavori{
+#recensioni{
 	text-align: center;
-	background-color: #d2b48c;
+	background-color: white;
 	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
     background-position: center; /* Centra l'immagine di sfondo */
 }
@@ -146,16 +146,16 @@ body{
 }
 
 h1{
-	color: #000000;
+	color: black;
 	font-size: 3rem;
 	font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    padding: 0px;
+    padding: 40px;
 }
 h2{
-	color: #000000;
+	color: black;
 	font-size: 3rem;
 	font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -172,15 +172,27 @@ h2{
     font-style: normal;
     padding: 50px;
 }
+.titolo{
+	color: black;
+	font-size: 3rem;
+	font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 100px;
+}
+
 .ds2{
-  color: white;
-  font-size: 2.0rem;
+  color: black;
+  font-size: 1.0rem;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
   padding: 10px;
-  background-color: #e6e6fa;
+  background-color: white;
+  height: 40px;
+  weight: 40px;
 	-webkit-backdrop-filter: blur(60px);
 	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.60);
 }
@@ -201,7 +213,7 @@ p{
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: normal;
-  font-style: normal;
+  font-style: bold;
   text-align: left;
   padding: 0px;
 }
@@ -229,7 +241,82 @@ p {
     color: #666;
     margin-bottom: 40px;
 }
+ .slider {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .slider-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .slider-buttons button {
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .slider-buttons button:hover {
+            background-color: rgba(0,0,0,0.7);
+        }
 
+ .review {
+            margin: 10px;
+            padding: 1px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .review p {
+            font-style: italic;
+        }
+        .review .author {
+            text-align: right;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 form {
     display: flex;
     flex-direction: column;
