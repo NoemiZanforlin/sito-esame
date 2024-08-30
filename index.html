@@ -1,185 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Imposta la viewport per migliorare il rendering sui dispositivi mobili -->
-		<title>Fairytale Weddings</title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	</head>
-	<body>
-		<!--Intestazione-->
-		<div class="header">
-			<!--Barra per il logo
-			<div class="barra-logo">
-				<img src="logo.png" height="100px">
-			</div>-->
-			<!--Barra per il menu
-			<div class="barra-menu">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#chisiamo">Chi Siamo</a></li>
-					<li><a href="#servizi">Servizi</a></li>
-					<li><a href="#inostrilavori">I nostri lavori</a></li>
-					<li><a href="#contatti">Dove siamo</a></li>
-					<li><a href="#dovesiamo">Contatti</a></li>
-				
-				</ul>
-			</div>-->
-			<div class="barra-menu">
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#chisiamo">Chi Siamo</a></li>
-					<li><a href="#servizi">Servizi</a></li>
-				</ul>
-				<ul>
-					<img src="logo.png" height="100px">
-                </ul>				
-				<ul>
-					<li><a href="#recensioni">Recensioni</a></li>
-					<li><a href="#contatti">contatti</a></li>
-					<li><a href="#dovesiamo">Dove siamo</a></li>
-				</ul>
-			</div>
-		</div>
-		<!--Contenuto-->
-		<div class="content">
-			<!--Sezione Home-->
-			<div class="sezione" id="home">
-				<h1>Home</h1>
-				<div class="paragrafo">L'amour: crea con noi la cerimonia perfetta per voi!</div>
-			</div>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<!-- Inclusione di Swiper CSS per lo slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+	<!-- Caricamento del file JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Inclusione di Swiper JS per lo slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<!-- Inclusione di FullCalendar CSS e JS -->
+<!-- Inclusione di FullCalendar CSS e JS -->
+<!-- Inclusione di FullCalendar CSS e JS -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+
+
+
+    
+
+</head>
+<body>
+    <!-- Header con menu toast -->
+    <header>
+        <div class="barra-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chisiamo">Chi Siamo</a></li>
+                <li><a href="#eventiCal">Sevizi e Calendario</a></li>
+            </ul>
+            <ul>
+                <img src="logo.png" height="100px" alt="Logo">
+            </ul>
+            <ul>
+                <li><a href="#recensioni">Recensioni</a></li>
+                <li><a href="#dovesiamo">Dove siamo</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+            <!-- Pulsante per aprire il toast menu -->
+            <div class="toast-menu-button">&#9776;</div>
+        </div>
+    </header>
+    
+    <!-- Toast Menu -->
+    <div class="toast-menu">
+        <!-- Logo nel menu mobile -->
+        <div class="toast-menu-logo">
+            <img src="logo.png" height="100px" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chisiamo">Chi Siamo</a></li>
+            <li><a href="#calendarioeeventi">Calendario e eventi</a></li>
+            <li><a href="#recensioni">Recensioni</a></li>
+            <li><a href="#dovesiamo">Dove siamo</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Section -->
+    <div class="sezione" id="home">
+        <div class="riquadro">
+            <h1>L'amour</h1>
+            <p class="pippo">L'amour: il team planner che lavora alla progettazione del tuo giorno perfetto!<br> Scopriamo insieme come rendere speciale e unica questa giornata.<br> Avrai l'occasione di studiare con noi ogni particolare,<br>dal fiore giusto per il bouquet, al colore migliore per le decorazioni.</p>
+            <p class="pluto">PLAN THE DAY, THAT OPEN YOUR NEW LIFE.</p>
+        </div>
+    </div>
+	
+	
 			<!--Sezione Chi siamo-->
 			<div class="sezione" id="chisiamo">
-				<div class="destra">
-					<h2>Chi siamo</h2>
-				</div>
-				<div class="sinistra">
-					<p>L'amour è azieda a conduzione familiare.<br>Da veniticinque anni lavora alla cerimonia perfetta per voi!<br>
-					Ogni piccolo dettaglio verrà curato nei minimi dettagli. <br>
-					Il nostro team ascolterà la vostra ì idea di matrimonio ideale,<br>
-					per arrivare a costruire una vera e propria favola.<br>
-					Ci occuperemo di ogni cosa,dalla location alla musica che preferirete.</p>
+				<div class="riquadrobase">
+					<div class="riquadroSinistra">
+						<h2>Chi siamo</h2><br />
+						<img src="foto/scrittalogo.png">
+						<p>
+							Noi di L'amour siamo un'azienda 
+							<br>a conduzione familiare. 
+							<br>Da venticinque anni ad oggi, ci occupiamo 
+							<br>della preparazione  di eventi 
+							<br>e cerimonie matrimoniali.
+							<br>All'interno del nostro team, abbiamo ruoli e mansioni 
+							<br>di ogni tipo, adeguate e perfezionate
+							<br>per un servizio impeccabile.
+							<br>Fotografi, decoratori, truccatori e persino
+							<br>tecnici del suono. 
+							<br>Ognuno di noi, lavora per poter progettare,
+							<br>insieme, il vostro matrimonio perfetto.
+						</p>
+					</div>
 				</div>
 			</div>
-			<!--Sezione Servizi-->
-			<div class="sezione" id="servizi">
-				<h1>Servizi</h1>
-			<div class="slider">
-        <div class="slides">
-            <img src="wedding-photo1.jpg" alt="Slide 1">
-            <img src="wedding-photo2.jpg" alt="Slide 2">
-            <img src="wedding-photo3.jpg" alt="Slide 3">
-        </div>
-			</div>
-
-			<!--Sezione Recensioni-->
-        <div class="sezione" id="recensioni">
-		<div class="titolo"> Recensioni</div>
-           
-            <div class="content">
-                <div class="review">
-				
-                    <p>"L'amour ha reso il nostro giorno speciale davvero indimenticabile. Ogni dettaglio era perfetto e il team è stato fantastico!"</p>
-                    <div class="author">- Mario e Luisa</div>
+	
+	
+                <!-- sezione eventi e Calendario -->
+                <div id="eventiCal">
+                <div class="containerblocco">
+                   <!-- Slider delle immagini -->
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="foto/wedding-photo1.jpg" alt="Foto 1"></div>
+                      <div class="swiper-slide"><img src="foto/wedding-photo2.jpg" alt="Foto 2"></div>
+                      <div class="swiper-slide"><img src="foto/wedding-photo3.jpg" alt="Foto 3"></div>
                 </div>
-                <div class="review">
-                    <p>"Non avremmo potuto chiedere un matrimonio migliore. Grazie a tutto lo staff per la loro dedizione e professionalità."</p>
-                    <div class="author">- Francesca e Marco</div>
+           
+            </div>
+		      <div class="riquadrobasecalendario">
+			  </div>
+        
+                <!-- Calendario con eventi -->
+               <div id="calendar-container">
+               <div id="calendar"></div>
+            </div>
+  
+       </div>
+	  </div>
+
+     <!-- Caricamento del file JavaScript -->
+    <script src="scripts.js"></script>
+	
+	<!--Sezione Recensioni-->
+<div class="sezione" id="recensioni">
+    
+    <div class="reviews-container">
+        <div class="review">
+            <div class="review-header">
+                <img src="foto/Elisa Fontana.jpg" alt="Ely">
+                <div class="review-info">
+                    <h3>Elisa Fontana</h3>
+                    <div class="rating">
+                        &#9733;&#9733;&#9733;&#9733;&#9734;
+                    </div>
                 </div>
             </div>
+            <blockquote>
+                "Io e mio marito abbiamo ricevuto tantissimi complimenti per il bellissimo evento. Siamo stati felicissimi di poter dire di esserci affidati ai migliori organizzatori di eventi!"
+            </blockquote>
         </div>
+		
+		<div class="reviews-container">
+        <div class="review">
+            <div class="review-header">
+                <img src="foto/Giulio&Alice.jpg" alt="G&A">
+                <div class="review-info">
+                    <h3>Giulio & Alice</h3>
+                    <div class="rating">
+                        &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                </div>
+            </div>
+            <blockquote>
+                "Il nostro è stato un matrimonio da favola. Il team è riuscito a unire tutti i nostri desideri, dalla musica alle decorazioni. Nonostante i grandi imprevisti per il maltempo, sono comunque riusciti a rendere la giornata meravigliosa!"
+            </blockquote>
+        </div>
+	</div>
+	</div>
+        <!-- Aggiungi altre recensioni qui -->
+
+        <form id="recensione-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="testo">Recensione:</label>
+            <textarea id="testo" name="testo" rows="4" required></textarea>
+
+            <label for="rating">Valutazione:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+
+            <button type="submit">Invia Recensione</button>
+        </form>
+    </div>
+            <!--Sezione Dove siamo-->
+			<div class="sezione" id="dovesiamo">
+				
+				<div class="riquadrodovesiamo">
+				<p class="titolo">Dove ci troviamo?</p>
+				<p class="indicazioni">Ci troviamo a Volterra,<br>luogo dai paesaggi meravigliosi e solari!<br>Un luogo storicamente molto importante. Molto apprezzato, oggi, per la bellezza delle caratteristiche monumentali,<br> che ancora oggi possiamo apprezzare. Volterra è la casa degli artigiani, della bellezza artistica, ma anche paesaggistica. </p>
+				<div class="simbolomappa">
+				<a href="https://maps.app.goo.gl/sabV5ackjYNYTDMeA"><i class="fa-solid fa-map-location-dot"></i></a>
+				</div>
+			 </div>
+			</div>
+		</div>
+			
 			<!--Sezione Contatti-->
 			<div class="sezione" id="contatti">
-				<h1>Contatti</h1>
-        <div class="container">
-            <p>Se sei interessato ad un nostro servizio, e desideri richiedere alcune informazioni, 
-			non esitare a contattarci! Noi saremo ben disponibili nel risponderti e aiutarti,<br>nella preparazione della tua cerimonia perfetta.</p>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Messaggio</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Invia</button>
-            </form>
+	
+				
+				<div class="formcontatti">
+
+                 <form action="#" method="post">
+				 <p class="contatto">Vorresti rimanere in contatto con noi?</p>
+						<div class="form-group">
+							<label for="name">Nome</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Messaggio</label>
+							<textarea id="message" name="message" rows="5" required></textarea>
+						</div>
+						<button type="submit">Invia</button>
+					</form>
+     
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                   <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                   <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                   <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+				   </link>
         </div>
-	</div>
-    </section>
-	<!--Sezione Dove siamo-->
-			<div class="sezione" id="dovesiamo">
-				<div class="ds"> Dove siamo</div>
-				<div class="ds2"> Ci troviamo a Volterra,<br>luogo dai paesaggi meravigliosi e solari!</div>
-				<a href="https://maps.app.goo.gl/sabV5ackjYNYTDMeA"><i class="fa-solid fa-map-location-dot"></i></a>
-			</div>
-			
-	</body>
-</html>	
-<!--
-     
-    <div style=text-align:center;>
-		<h1>Fairytale Weddings</h1>
-		<p>Wedding and event planner</p>  
-    
-		<title>fairytale weddings</title>
+		 </div>
 
-		<h1>Vivi il tuo giorno da favola con noi!</h1>
-	</div>
-	--> 
-	<!--
-    <img src="wedding-invitation-card.jpg1920x1080">
-	<img src="pexels-karolina-grabowska-4622890.jpg">
-	
 
-	</p>Fairytale Weddings lavora alla cerimonia perfetta per voi!
-	Ogni piccolo dettaglio verrà curato nei minimi dettagli. 
-	Il nostro team ascolterà la tua idea di matrimonio ideale, per arrivare a costruire una vera e propria favola!
-	La nostra è un'attività a conduzione familiare, nata nel 1980.
-	Da quarantaquattro anni, lavoriamo per poter realizzare le cerimonie più belle.</p>
-
-	<h1 id="dovesiamo">Dove siamo</h1>
-	<p>qui metto la posizione dell'attività</p>
-	<img src="https://via.placeholder.com/400x200">
-    <h1 id="contattaci">Contattaci</h1>
-	</p>Per ricevere maggiori informazioni sul nostro servizio e sui possibili piani tra cui scegliere, puoi contattarci al:...
-    Seguici sulle nostre pagine social (....) ed interagisci con noi! Tutto questo, per poter vedere i nostri Fairytale Weddings e  poter creare la vostra, di favola!</p>
--->
-
-<!--
-     
-    <div style=text-align:center;>
-		<h1>Fairytale Weddings</h1>
-		<p>Wedding and event planner</p>  
-    
-		<title>fairytale weddings</title>
-
-		<h1>Vivi il tuo giorno da favola con noi!</h1>
-	</div>
-	--> 
-	<!--
-    <img src="wedding-invitation-card.jpg1920x1080">
-	<img src="pexels-karolina-grabowska-4622890.jpg">
-	
-
-	</p>Fairytale Weddings lavora alla cerimonia perfetta per voi!
-	Ogni piccolo dettaglio verrà curato nei minimi dettagli. 
-	Il nostro team ascolterà la tua idea di matrimonio ideale, per arrivare a costruire una vera e propria favola!
-	La nostra è un'attività a conduzione familiare, nata nel 1980.
-	Da quarantaquattro anni, lavoriamo per poter realizzare le cerimonie più belle.</p>
-
-	<h1 id="dovesiamo">Dove siamo</h1>
-	<p>qui metto la posizione dell'attività</p>
-	<img src="https://via.placeholder.com/400x200">
-    <h1 id="contattaci">Contattaci</h1>
-	</p>Per ricevere maggiori informazioni sul nostro servizio e sui possibili piani tra cui scegliere, puoi contattarci al:...
-    Seguici sulle nostre pagine social (....) ed interagisci con noi! Tutto questo, per poter vedere i nostri Fairytale Weddings e  poter creare la vostra, di favola!</p>
--->
-
+</body
+</html>
