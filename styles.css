@@ -1,374 +1,640 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-body{
-    margin: 0;
+/* Inizio Header */
+header {
+    background-color: rgba(255, 255, 255, 0.7); /* Bianco semitrasparente */
+    position: fixed; /* Fissa il menu in cima alla pagina */
+    width: 100%; /* Copre tutta la larghezza */
+    z-index: 1000; /* Assicura che il menu sia sopra gli altri contenuti */
+}
+
+/* La barra-menu rimane invariata */
+.barra-menu {
+    display: flex; /* Dispone gli elementi in linea */
+    justify-content: space-between; /* Spazia gli elementi tra loro */
+    align-items: center; /* Allinea verticalmente al centro */
+    padding: 10px 20px; /* Aggiunge un po' di padding intorno al menu */
+}
+
+.barra-menu ul {
+    list-style: none; /* Rimuove i punti elenco */
     padding: 0;
-}
-.header{
-	top: 0;/*Attaccato sopra*/
-	left: 0;/*Attaccato a sinistra*/
-	right: 0;/*Attaccato a destra*/
-	padding-top: 0px;/*Contenuto staccato da sopra*/
-	padding-bottom: 0px;/*Contenuto staccato da sotto*/
-	
-	display: flex;
-    justify-content: center;/*Centra orizzontalmente il menu*/
-    align-items: center;/*Centra verticalemente il menu*/
-	flex-direction: column;
-	
-    height: 150px;/*Altezza che puoi regolare a piacimento*/
-	width: 100%;/*Larghezza 100%*/
-	position: fixed;
-	
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(30px);
-	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-}
-.barra-logo{
-	flex: 1;
-	height: 100px;
-	width: 100vw;
-	display: flex;
-	justify-content: center;/*Centra orizzontalmente il menu*/
-    align-items: center;/*Centra verticalemente il menu*/
-}
-.barra-menu{
-	margin: 0;
-    padding: 0;/*Nessuno spazio aggiuntivo*/
-	flex: 1;
-	height: 50px;
-	width: 100vw;
-	display: flex;
-	justify-content: space-between;/*Centra orizzontalmente il menu*/
-    align-items: center;/*Centra verticalemente il menu*/
-}
-.barra-menu ul{
-	list-style: none;/*Togli i punti elenco*/
-	display: flex;
-	flex-direction: row;
-	justify-content: center;/*Centra orizzontalmente il menu*/
-    align-items: center;/*Centra verticalemente il menu*/
-	margin: 0;/*Contenuto del menu appiccicato ai bordi dell'header*/
-	margin-left: 100px;/*Contenuto del menu staccato da sinitra*/
-	margin-right: 100px;/*Contenuto del menu staccato da destra*/
-	padding: 0;
-	gap: 20px;
-}
-.barra-menu a{
-	color: #8b008b;/*Colore base*/
-	text-decoration: none;/*Rimuovi la sottolineatura*/
-	font-family: "Times New Roman", Times, serif;
-	font-size: 1.0rem;
-	font-weight: semi-condensed;
-}
-.barra-menu a:hover{
-	color: blue;
-}
-.content{
-	/*Questo conterrà le sezioni del corpo*/
-    padding: 0px;/*Distanza del contenuto dai margini*/
-    top: 0;/*Attaccato sopra*/
-	left: 0;/*Attaccato a sinistra*/
-	right: 0;/*Attaccato a destra*/
-	margin: 0;
-	margin-top: 0px;/*Con questo decidi quanto allontanarlo dal menu. Se il menu è alto 50px e qui metti 50px, allora sarà subito attaccato sotto*/
-	width: 100%;
-	display: flex;
-	flex-direction: column;/*Mette in colonna le sezioni*/
-	align-items: center;/*Centra verticalemente la sezione*/
-}
-.sezione{
-	top: 0;/*Attaccato sopra*/
-	left:0;/*Attaccato a sinistra*/
-	right: 0;/*Attaccato a destra*/
-	padding: 0px;
-	padding-top: 150px;
-	height: calc(100vh - 150px);/*Calcola l'altezza facendo il 100% dello schermo meno tot px*/
-	width: 100vw;
-	font-size: 15px;
-
-	
-}
-#home{
-	text-align: center;
-	background-image: url('foto/wedding-invitation-card.jpg');
-	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
-    background-position: center; /* Centra l'immagine di sfondo */
-}
-#chisiamo{
-	text-align: left;
-    background-image: url('foto/team.jpg');  
-	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
-    background-position: center; /* Centra l'immagine di sfondo */
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-#destra{
-	width: 1000px;
-	align-items: center;
-}
-#sinistra{
-	align-items: center;
-}
-#servizi{
-	text-align: center;
-	background-color:#e6e6fa;
-	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
-    background-position: center; /* Centra l'immagine di sfondo */
-}
-#recensioni{
-	text-align: center;
-	background-color: white;
-	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
-    background-position: center; /* Centra l'immagine di sfondo */
+    margin: 0;
+    display: flex; /* Dispone gli elementi in linea */
 }
 
-#contatti{
-	text-align: center;
-	background-image: url('foto/pexels-karolina-grabowska-4622890 -.jpg');  
-	background-size: cover; /* Copre l'intera sezione con l'immagine di sfondo */
+.barra-menu ul li {
+    margin: 0 15px; /* Spaziatura tra i link */
+}
+
+.barra-menu ul li a {
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    color: #8b008b; /* Colore base dei link del menu */
+    font-family: 'Lora', serif;
+    font-size: 1.0rem;
+}
+
+.barra-menu img {
+    height: 100px; /* Altezza dell'immagine del logo */
+    margin: 0 20px; /* Spaziatura intorno al logo */
+}
+
+/* Nasconde il toast menu di default */
+.toast-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    overflow-y: auto; /* Aggiungi uno scroll se il contenuto è troppo lungo */
+}
+
+/* Stili per il logo nel menu mobile */
+.toast-menu-logo {
+    text-align: center;
+    margin-bottom: 20px; /* Spazio sotto il logo */
+}
+
+.toast-menu-logo img {
+    height: 80px; /* Altezza del logo nel menu mobile */
+}
+
+/* Stili per il menu toast */
+.toast-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toast-menu ul li {
+    padding: 15px 20px;
+}
+
+.toast-menu ul li a {
+    text-decoration: none;
+    color: #8b008b;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+}
+
+/* Pulsante Toast Menu */
+.toast-menu-button {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #8b008b;
+}
+
+/* Mostra il toast menu quando attivo */
+.toast-menu.active {
+    display: block;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .toast-menu-button {
+        display: block; /* Mostra il pulsante toast menu sui dispositivi mobili */
+    }
+
+    .barra-menu ul {
+        display: none; /* Nasconde i menu normali */
+    }
+
+    .barra-menu img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .toast-menu ul li a {
+        font-size: 1rem; /* Riduce la dimensione del testo nei link */
+    }
+
+    .barra-menu img {
+        height: 60px; /* Riduce l'altezza del logo */
+    }
+}
+
+/* Primo contenuto */
+#home {
+    background-image: url('foto/1.jpg'); /* Immagine di sfondo */
+    background-size: cover; /* Copre tutta l'area disponibile */
     background-position: center; /* Centra l'immagine di sfondo */
-	padding-bottom: 100px;
+    width: 100%; /* Larghezza dell'intera pagina */
+    height: 100vh; /* Altezza dell'intera visualizzazione */
+    display: flex; /* Utilizza Flexbox per allineare il contenuto */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+    /*padding-top: 140px; */ /* Assicura spazio sotto il menu */
 }
 
-#dovesiamo{
-	text-align: center;
-	background-image: url('foto/volterra.jpg');
-	background-size: cover;  Copre l'intera sezione con l'immagine di sfondo 
-    background-position: center;  Centra l'immagine di sfondo
-	color: white;
-}
-#dovesiamo a{
-	text-align: center;
-	font-size: 3rem;
-	color: white;
+.riquadro {
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semitrasparente */
+    width: 80%; /* Larghezza dell'80% della pagina */
+    padding: 20px; /* Spaziatura interna */
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra */
+    text-align: center; /* Centra il testo */
 }
 
-h1{
-	color: black;
-	font-size: 3rem;
-	font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+.riquadro h1 {
+    color: black;
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
     padding: 40px;
+    padding-bottom: 15px;
 }
-h2{
-	color: black;
-	font-size: 3rem;
-	font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: black;
-    font-style: normal;
-    padding: 100px;
+
+.pippo {
+    font-size: 18px;
+    line-height: 1.6; /* Aumenta l'interlinea per una migliore leggibilità */
+    margin-bottom: 20px; /* Spazio sotto il paragrafo */
 }
-.ds{
-	color: white;
-	font-size: 3rem;
-	font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
+
+.pluto {
+    font-size: 24px;
     font-weight: bold;
-    font-style: normal;
-    padding: 50px;
-}
-.titolo{
-	color: black;
-	font-size: 3rem;
-	font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    padding: 100px;
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    margin-top: 30px; /* Spazio sopra il paragrafo */
 }
 
-.ds2{
-  color: black;
-  font-size: 1.0rem;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  padding: 10px;
-  background-color: white;
-  height: 40px;
-  weight: 40px;
-	-webkit-backdrop-filter: blur(60px);
-	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.60);
+/* Sezione Chi siamo */
+#chisiamo {
+    background-image: url('foto/team.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
 
-
-.paragrafo{	
-  color: white;
-  font-size: 3.5rem;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  padding: 0px;
-}
-p{
-  color: black;
-  font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: bold;
-  text-align: left;
-  padding: 0px;
+/* Riquadro base */
+.riquadrobase {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; /* Centra il riquadro */
 }
 
-.contact-section {
-background-image: url('foto/pexels-karolina-grabowska-4622890 -.jpg'); 
- background-position: center; /* Centra l'immagine di sfondo */
-    padding: 0px;
-}
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Riquadro sinistra */
+.riquadroSinistra {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%; /* Adattato per dispositivi più piccoli */
+    padding: 20px;
+    border-radius: 150px 150px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+/* Media query per tablet */
+@media (max-width: 768px) {
+    .riquadrobase {
+        width: 80%;
+    }
+
+    .riquadroSinistra {
+        width: 90%;
+        border-radius: 100px 100px 0px 0px; /* Riduce la curva per schermi più piccoli */
+    }
+
+    #chisiamo {
+        height: 70vh; /* Riduce l'altezza su schermi più piccoli */
+    }
 }
 
-p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 40px;
-}
- .slider {
-            position: relative;
-            width: 80%;
-            max-width: 600px;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slides img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .slider-buttons {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-        .slider-buttons button {
-            background-color: rgba(0,0,0,0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .slider-buttons button:hover {
-            background-color: rgba(0,0,0,0.7);
-        }
+/* Media query per dispositivi mobili */
+@media (max-width: 480px) {
+    .riquadrobase {
+        width: 90%;
+    }
 
- .review {
-            margin: 10px;
-            padding: 1px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-        }
-        .review p {
-            font-style: italic;
-        }
-        .review .author {
-            text-align: right;
-            font-weight: bold;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button[type="submit"] {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-form {
+    .riquadroSinistra {
+        width: 100%;
+        border-radius: 50px 50px 0px 0px; /* Riduce ulteriormente la curva per schermi molto piccoli */
+    }
+
+    #chisiamo {
+        height: 50vh; /* Riduce ulteriormente l'altezza */
+    }
+}
+
+/* Contenitore principale per centrare gli elementi */
+#eventiCal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6fa;
+    padding: 20px; /* Aggiungi un po' di padding per gli spazi */
+    flex-direction: column; /* Cambia a colonna per dispositivi mobili */
+}
+
+  
+/* Contenitore per lo slider e il calendario */
+.containerblocco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column; /* Disporre in colonna per schermi piccoli */
+}
+
+/* Stili per lo slider */
+.slider-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px; /* Limita la larghezza per schermi piccoli */
+}
+
+/* Stili per lo slider */
+.swiper-container {
+    width: 100%; /* Cambia a 100% per schermi piccoli */
+    max-width: 600px; /* Limita la larghezza per schermi piccoli */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+}
+
+/* Adatta le immagini al contenitore */
+.swiper-slide img {
+    width: 100%;
+    height: auto; /* Mantiene il rapporto d'aspetto */
+    object-fit: cover;
+}
+
+/* Stili per la paginazione */
+.swiper-pagination-bullet {
+    background: #8b008b;
+}
+
+#calendar-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Cambia a center per schermi piccoli */
+    width: 100%;
+    max-width: 600px; /* Limita la larghezza massima del calendario */
+    margin-top: 20px; /* Aggiungi un margine per distanziare dallo slider */
+}
+
+#calendar {
+    width: 100%;
+    max-width: 600px; /* Limita la larghezza massima del calendario */
+}
+
+/* Stili per il riquadro base */
+.riquadrobasecalendario {
+    background-color: #e6e6fa;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Aggiunge uno spazio tra il riquadro e gli altri elementi */
+}
+
+/* Media Queries per dispositivi di diverse dimensioni */
+@media (min-width: 768px) {
+    /* Schermi medi (tablet) */
+    #eventiCal {
+        flex-direction: row;
+    }
+
+    .containerblocco {
+        flex-direction: row;
+    }
+
+    #calendar-container {
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Schermi larghi (desktop) */
+    .swiper-container {
+        width: 50%; /* Ritorna alla larghezza iniziale */
+    }
+
+    #calendar-container {
+        width: 50%;
+    }
+}
+
+#recensioni {
+    background-color:#faf0e6;
+    background-size: cover; /* Copre tutta l'area disponibile */
+    background-position: center; /* Centra l'immagine di sfondo */
+    width: 100%; /* Larghezza dell'intera pagina */
+    height: 100vh; /* Altezza dell'intera visualizzazione */
+}
+/* Container principale delle recensioni */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+/* Singola recensione */
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Immagine profilo utente */
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* Stile del modulo recensioni */
+#recensione-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+#recensione-form input, 
+#recensione-form textarea, 
+#recensione-form select, 
+#recensione-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#recensione-form button {
+    background-color: #8b008b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#recensione-form button:hover {
+    background-color: #551a8b;
+}
+
+/* Media Query per schermi più piccoli */
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .review {
+        padding: 15px;
+    }
+
+    .review-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .review-info h3 {
+        font-size: 1em;
+    }
+
+    .review-info {
+        margin-top: 10px;
+    }
+
+    blockquote {
+        font-size: 0.9em;
+        padding-left: 10px;
+    }
+
+    /* Riduci padding per moduli e pulsanti */
+    #recensione-form input, 
+    #recensione-form textarea, 
+    #recensione-form select, 
+    #recensione-form button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adatta il layout per schermi ancora più piccoli */
+    .review-header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .review-info h3 {
+        font-size: 0.9em;
+    }
+
+    #recensione-form input, 
+    #recensione-form textarea, 
+    #recensione-form select, 
+    #recensione-form button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #recensione-form button {
+        font-size: 0.9em;
+    }
+	 
+
+}
+ #dovesiamo {
+    background-image: url('foto/vertical-shot-pathway-middle-buildings-daytime.jpg'); /* Immagine di sfondo */
+    background-size: cover; /* Copre tutta l'area disponibile */
+    background-position: center; /* Centra l'immagine di sfondo */
+    width: 100%; /* Larghezza dell'intera pagina */
+    height: 100vh; /* Altezza dell'intera visualizzazione */
+    display: flex; /* Utilizza Flexbox per allineare il contenuto */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+    /*padding-top: 140px; */ /* Assicura spazio sotto il menu */
+	
+	}
+
+.riquadrodovesiamo {
+    background-color: rgba(255, 240, 245, 0.8); /* Sfondo bianco semitrasparente */  
+    width: 60%; /* Larghezza dell'80% della pagina */
+    padding: 20px; /* Spaziatura interna */
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra */
+    text-align: center; /* Centra il testo */
+}
+
+.destra h1{
+    color: black;
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    padding: 40px;
+    padding-bottom: 15px;
+}
+.titolo{
+    font-size: 24px;
+	font-style: bold;
+	font-weight: bold;
+    line-height: 1.6; /* Aumenta l'interlinea per una migliore leggibilità */
+    margin-bottom: 20px; /* Spazio sotto il paragrafo */
+}
+  
+.indicazioni  {
+    font-size: 18px;
+    line-height: 1.6; /* Aumenta l'interlinea per una migliore leggibilità */
+    margin-bottom: 20px; /* Spazio sotto il paragrafo */
+}
+  
+#contatti {
+    background-image: url('foto/fiori.jpg'); /* Immagine di sfondo */
+    background-size: cover; /* Copre tutta l'area disponibile */
+    background-position: center; /* Centra l'immagine di sfondo */
+    width: 100%; /* Larghezza dell'intera pagina */
+    height: 100vh; /* Altezza dell'intera visualizzazione */
+}
+.formcontatti{
+	align-items: center; /* Centra il contenuto verticalmente */
+} 
+
+link {
+    font-size: 1.2em;
+    color: black;
+    margin-top: -40px;
+	text-align: center;
+	padding: 80px;
+	align-items: center;
+}
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    width: 50%;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+	padding: 120px;
+}
+.contatto {
+    font-size: 24px;
+	font-style: bold;
+	font-weight: bold;
+    line-height: 1.6; /* Aumenta l'interlinea per una migliore leggibilità */
+    margin-bottom: 20px; /* Spazio sotto il paragrafo */
 }
 
-label {
+.form-group {
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input, textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
-	higher: 50%;
+    max-width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
+    border-radius: 0px;
+    flex: 1;
 }
 
-button {
+button[type="submit"] {
     padding: 10px 20px;
+    background-color: #333;
+    color: white;
     border: none;
-    border-radius: 4px;
-    background-color: #e6e6fa;
-    color: #fff;
-    font-size: 1.2em;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #4cae4c;
+button[type="submit"]:hover {
+    background-color: #e6e6fa;
 }
 
-.map-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
+link {
+     color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+/* Stili per dispositivi con larghezza massima di 768px (tablet e telefoni in landscape) */
+@media screen and (max-width: 768px) {
+    #contatti h1 {
+        padding-top: 150px;
+        margin-top: -130px;
+        font-size: 1.5em;
+    }
+
+    #contatti p {
+        font-size: 0.9em;
+        margin-top: -20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: 250px;
+        padding: 10px;
+    }
+}
+
+/* Stili per dispositivi con larghezza massima di 480px (telefoni in portrait) */
+@media screen and (max-width: 480px) {
+    #contatti h1 {
+        padding-top: 100px;
+        margin-top: -80px;
+        font-size: 1.2em;
+    }
+
+    #contatti p {
+        font-size: 0.8em;
+        margin-top: -10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: 200px;
+        padding: 8px;
+		color: white;
+    }
