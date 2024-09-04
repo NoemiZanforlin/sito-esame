@@ -1,10 +1,4 @@
-$(document).ready(function() {
-    // Inizializzazione del menu mobile
-    $('.toast-menu-button').on('click', function() {
-        $('.toast-menu').toggleClass('active');
-    });
-
- // Inizializzazione di Swiper
+// Inizializzazione di Swiper
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -24,21 +18,28 @@ $(document).ready(function() {
     });
 	
 	
-	
-	
-	 var calendarEl = document.getElementById('calendar');
+
+        var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth', // Visualizzazione del mese
+          initialView: 'dayGridMonth', // Visualizzazione del mese
             editable: true, // Permette la modifica degli eventi
             selectable: true, // Permette la selezione delle date
             events: generateRandomEvents(), // Genera eventi randomici
+			locale: 'it',
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                right: ''
             }
         });
         calendar.render();
+
+		 $('#calendar').css({
+			'font-family': 'Arial, Helvetica Neue, Helvetica, sans-serif'
+		
+		});
+	
+
 	
 	// Funzione per generare eventi randomici
     function generateRandomEvents() {
@@ -63,4 +64,9 @@ $(document).ready(function() {
 	
 	
 });
+
+
+
+  // Optional: Add any custom JavaScript for further interaction or functionality here.
+console.log("Social media links ready!");
 
