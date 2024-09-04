@@ -224,19 +224,17 @@ header {
         height: 50vh; /* Riduce ulteriormente l'altezza */
     }
 }
-
 /* Contenitore principale per centrare gli elementi */
 #eventiCal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: #e6e6fa;
+    background-color: #e6e6fa;      
     padding: 20px; /* Aggiungi un po' di padding per gli spazi */
     flex-direction: column; /* Cambia a colonna per dispositivi mobili */
 }
 
-  
 /* Contenitore per lo slider e il calendario */
 .containerblocco {
     display: flex;
@@ -281,7 +279,7 @@ header {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Cambia a center per schermi piccoli */
+    align-items: center; /* Mantiene il calendario centrato */
     width: 100%;
     max-width: 600px; /* Limita la larghezza massima del calendario */
     margin-top: 20px; /* Aggiungi un margine per distanziare dallo slider */
@@ -312,10 +310,11 @@ header {
 
     .containerblocco {
         flex-direction: row;
+        justify-content: center; /* Per assicurarsi che gli elementi rimangano centrati */
     }
 
     #calendar-container {
-        align-items: flex-end;
+        align-items: center; /* Mantiene il calendario centrato anche su schermi medi */
     }
 }
 
@@ -327,23 +326,35 @@ header {
 
     #calendar-container {
         width: 50%;
+        align-items: center; /* Assicura che il calendario rimanga centrato anche su schermi larghi */
     }
 }
-
 #recensioni {
-    background-color:#faf0e6;
+    display: flex; /* Imposta Flexbox per il container principale */
+    flex-direction: column; /* Disposizione verticale */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra orizzontalmente */
+    background-color: #faf0e6;
     background-size: cover; /* Copre tutta l'area disponibile */
     background-position: center; /* Centra l'immagine di sfondo */
     width: 100%; /* Larghezza dell'intera pagina */
-    height: 100vh; /* Altezza dell'intera visualizzazione */
+    min-height: 100vh; /* Altezza minima dell'intera visualizzazione */
+    padding: 20px; /* Aggiunge un po' di padding */
+    box-sizing: border-box; /* Include padding e bordi nella larghezza totale */
 }
+
 /* Container principale delle recensioni */
 .reviews-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex; /* Usa Flexbox per affiancare le recensioni e il form */
+    gap: 20px; /* Spazio tra le recensioni e il form */
+    width: 100%; /* Rende il contenitore flessibile */
+    max-width: 1200px; /* Aumentato per includere lo spazio per il form */
     padding: 20px;
-    margin-top: -20px;
+    box-sizing: border-box; /* Include padding nella larghezza totale */
+    margin-bottom: 20px; /* Aggiunge spazio sotto le recensioni */
+    justify-content: center; /* Centra orizzontalmente le recensioni e il form */
+    align-items: center; /* Allinea verticalmente le recensioni e il form */
+    flex-wrap: wrap; /* Permette agli elementi di andare su più righe se necessario */
 }
 
 /* Singola recensione */
@@ -353,6 +364,8 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px; /* Permette alle recensioni di crescere uniformemente e restringersi */
+    max-width: 300px; /* Limita la larghezza massima delle recensioni */
 }
 
 /* Immagine profilo utente */
@@ -369,7 +382,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Limita la larghezza del form */
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box; /* Assicura che padding e bordi siano inclusi nella larghezza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Rimuove spazio extra sopra il form */
+    flex-shrink: 0; /* Previene che il form si rimpicciolisca */
+    flex: 1 1 300px; /* Assicura che il form sia flessibile e allineato con le recensioni */
 }
 
 #recensione-form input, 
@@ -377,11 +399,17 @@ header {
 #recensione-form select, 
 #recensione-form button {
     width: 100%;
+    max-width: 100%; /* Impedisce che gli elementi superino il contenitore */
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
+    box-sizing: border-box; /* Include padding e bordi nella larghezza */
+}
+
+#recensione-form textarea {
+    resize: vertical; /* Permette il ridimensionamento verticale solo */
 }
 
 #recensione-form button {
@@ -398,39 +426,19 @@ header {
 /* Media Query per schermi più piccoli */
 @media (max-width: 768px) {
     .reviews-container {
+        flex-direction: column; /* Stack le recensioni e il form verticalmente */
+        align-items: center; /* Centra le recensioni e il form */
         padding: 10px;
         gap: 20px;
     }
 
     .review {
         padding: 15px;
+        max-width: 100%; /* Lascia che le recensioni prendano tutta la larghezza disponibile */
     }
 
-    .review-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .review-info h3 {
-        font-size: 1em;
-    }
-
-    .review-info {
-        margin-top: 10px;
-    }
-
-    blockquote {
-        font-size: 0.9em;
-        padding-left: 10px;
-    }
-
-    /* Riduci padding per moduli e pulsanti */
-    #recensione-form input, 
-    #recensione-form textarea, 
-    #recensione-form select, 
-    #recensione-form button {
-        padding: 10px;
+    #recensione-form {
+        max-width: 100%; /* Lascia che il form prenda tutta la larghezza disponibile */
     }
 }
 
@@ -456,9 +464,9 @@ header {
     #recensione-form button {
         font-size: 0.9em;
     }
-	 
-
 }
+
+
  #dovesiamo {
     background-image: url('foto/vertical-shot-pathway-middle-buildings-daytime.jpg'); /* Immagine di sfondo */
     background-size: cover; /* Copre tutta l'area disponibile */
@@ -503,71 +511,68 @@ header {
 }
   
 #contatti {
+    display: flex; /* Utilizza Flexbox per centrare */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
     background-image: url('foto/fiori.jpg'); /* Immagine di sfondo */
     background-size: cover; /* Copre tutta l'area disponibile */
     background-position: center; /* Centra l'immagine di sfondo */
     width: 100%; /* Larghezza dell'intera pagina */
     height: 100vh; /* Altezza dell'intera visualizzazione */
 }
-.formcontatti{
-	align-items: center; /* Centra il contenuto verticalmente */
-} 
 
-link {
-    font-size: 1.2em;
-    color: black;
-    margin-top: -40px;
-	text-align: center;
-	padding: 80px;
-	align-items: center;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.formcontatti {
+    display: flex; /* Utilizza Flexbox per contenere il form */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Larghezza completa per responsività */
 }
 
-form {
+.form-contatti-custom {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Disposizione verticale */
     align-items: center;
-    align-content: center;
-	padding: 120px;
+    padding: 40px 20px; /* Aggiusta padding per avere spazio interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo leggermente opaco per migliorare leggibilità */
+    border-radius: 10px; /* Bordo arrotondato per stile */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombra per dare profondità */
+    max-width: 500px; /* Limita la larghezza massima del form */
+    width: 100%; /* Larghezza completa per responsività */
 }
-.contatto {
+
+.form-contatti-custom .contatto {
     font-size: 24px;
-	font-style: bold;
-	font-weight: bold;
+    font-weight: bold;
     line-height: 1.6; /* Aumenta l'interlinea per una migliore leggibilità */
     margin-bottom: 20px; /* Spazio sotto il paragrafo */
+    text-align: center; /* Centra il testo */
 }
 
-.form-group {
+.form-contatti-custom .form-group {
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%; /* Larghezza completa */
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
 }
 
-.form-group label {
+.form-contatti-custom .form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: center; /* Centra le etichette */
 }
 
-.form-group input,
-.form-group textarea {
+.form-contatti-custom .form-group input,
+.form-contatti-custom .form-group textarea {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Limita la larghezza massima degli input */
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 0px;
-    flex: 1;
+    border-radius: 5px; /* Aggiunge bordi arrotondati agli input */
 }
 
-button[type="submit"] {
+.form-contatti-custom button[type="submit"] {
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -576,15 +581,91 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.form-contatti-custom button[type="submit"]:hover {
     background-color: #e6e6fa;
 }
 
-link {
-     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Media query per migliorare la responsività */
+@media (max-width: 768px) {
+    .form-contatti-custom {
+        padding: 20px; /* Riduce il padding su schermi piccoli */
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Spazio attorno al contenuto del footer */
+    background-color: #f8f9fa; /* Colore di sfondo del footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Per rendere responsivo */
+    align-items: center; /* Allineamento verticale al centro */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    gap: 20px; /* Distanza tra i due div */
+    max-width: 1000px; /* Limite massimo di larghezza */
+    width: 100%; /* Larghezza completa per la responsività */
+}
+
+.testofooter {
+    margin: 0;
+    text-align: center; /* Centra il testo all'interno del div */
+    font-size: 16px;
+    color: #333;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 15px; /* Distanza tra le icone */
+    justify-content: center;  /* Centra orizzontalmente */
+    padding: 0px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+/* Media query per la responsività */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Dispone i div in colonna su schermi piccoli */
+        text-align: center; /* Centra il contenuto sui dispositivi mobili */
+    }
+}
+
+
+/* Specifica i colori per ogni icona al passaggio del mouse */
+#facebook:hover {
+    background-color: #DDA0DD;
+}
+
+#twitter:hover {
+    background-color: #DDA0DD;
+}
+
+#instagram:hover {
+    background-color: #DDA0DD;
+}
+
+#linkedin:hover {
+    background-color: #DDA0DD;
 }
 /* Stili per dispositivi con larghezza massima di 768px (tablet e telefoni in landscape) */
 @media screen and (max-width: 768px) {
@@ -637,3 +718,5 @@ link {
         padding: 8px;
 		color: white;
     }
+	
+	
