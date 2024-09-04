@@ -16,7 +16,7 @@
 	<!-- Inclusione di FullCalendar CSS e JS -->
 <!-- Inclusione di FullCalendar CSS e JS -->
 <!-- Inclusione di FullCalendar CSS e JS -->
-<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css' rel='stylesheet' />
+
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
 
 
@@ -123,9 +123,8 @@
      <!-- Caricamento del file JavaScript -->
     <script src="scripts.js"></script>
 	
-	<!--Sezione Recensioni-->
+<!-- Sezione Recensioni -->
 <div class="sezione" id="recensioni">
-    
     <div class="reviews-container">
         <div class="review">
             <div class="review-header">
@@ -138,11 +137,10 @@
                 </div>
             </div>
             <blockquote>
-                "Io e mio marito abbiamo ricevuto tantissimi complimenti per il bellissimo evento. Siamo stati felicissimi di poter dire di esserci affidati ai migliori organizzatori di eventi!"
+                "Io e mio marito abbiamo ricevuto tantissimi complimenti per la bellissima cerimonia del nostro matrimonio. Siamo stati felicissimi di poter dire di esserci affidati ai migliori organizzatori di eventi!"
             </blockquote>
         </div>
-		
-		<div class="reviews-container">
+
         <div class="review">
             <div class="review-header">
                 <img src="foto/Giulio&Alice.jpg" alt="G&A">
@@ -154,12 +152,9 @@
                 </div>
             </div>
             <blockquote>
-                "Il nostro è stato un matrimonio da favola. Il team è riuscito a unire tutti i nostri desideri, dalla musica alle decorazioni. Nonostante i grandi imprevisti per il maltempo, sono comunque riusciti a rendere la giornata meravigliosa!"
+                "Il nostro è stato un matrimonio da favola. Il team è riuscito a unire tutti i nostri desideri, dalla musica alle decorazioni. Nonostante i grandi imprevisti, sono riusciti a rendere la giornata meravigliosa!"
             </blockquote>
         </div>
-	</div>
-	</div>
-        <!-- Aggiungi altre recensioni qui -->
 
         <form id="recensione-form">
             <label for="nome">Nome:</label>
@@ -180,6 +175,10 @@
             <button type="submit">Invia Recensione</button>
         </form>
     </div>
+</div>
+
+
+
             <!--Sezione Dove siamo-->
 			<div class="sezione" id="dovesiamo">
 				
@@ -191,39 +190,56 @@
 				</div>
 			 </div>
 			</div>
-		</div>
+		
 			
 			<!--Sezione Contatti-->
-			<div class="sezione" id="contatti">
-	
-				
-				<div class="formcontatti">
+<div class="sezione" id="contatti">
+    <div id="contatti-form" class="formcontatti">
+        <form action="#" method="post" class="form-contatti-custom">
+            <p class="contatto">Vorresti rimanere in contatto con noi?</p>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+</div><!--chiudeSezione Contatti-->
 
-                 <form action="#" method="post">
-				 <p class="contatto">Vorresti rimanere in contatto con noi?</p>
-						<div class="form-group">
-							<label for="name">Nome</label>
-							<input type="text" id="name" name="name" required>
-						</div>
-						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email" required>
-						</div>
-						<div class="form-group">
-							<label for="message">Messaggio</label>
-							<textarea id="message" name="message" rows="5" required></textarea>
-						</div>
-						<button type="submit">Invia</button>
-					</form>
-     
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-                   <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
-                   <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                   <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-				   </link>
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <p class="testofooter"> &#169; Noemi Zanforlin | L'amour - Wedding Planner </p>
         </div>
-		 </div>
+        <div>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com" target="_blank" class="social-link" id="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-link" id="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-link" id="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-link" id="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+
+    <script src="scripts.js"></script>
 </body
 </html>
