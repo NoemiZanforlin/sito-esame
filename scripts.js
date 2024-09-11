@@ -1,4 +1,16 @@
-// Inizializzazione di Swiper
+$(document).ready(function() {
+    // Inizializzazione del menu mobile
+    $('.toast-menu-button').on('click', function() {
+        $('.toast-menu').toggleClass('active'); // Alterna l'attivazione del menu
+    });
+
+    // Funzione per chiudere il menu cliccando sul pulsante di chiusura
+    $('.toast-menu-close').on('click', function() {
+        $('.toast-menu').removeClass('active'); // Rimuove la classe 'active' per chiudere il menu
+    });
+
+
+ // Inizializzazione di Swiper
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
