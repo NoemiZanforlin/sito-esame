@@ -93,20 +93,46 @@ header {
     display: block;
 }
 
+/* Stili aggiuntivi per mantenere il logo al centro visibile su dispositivi mobili */
+.logo-center {
+    display: flex;
+    justify-content: center; /* Centra il logo orizzontalmente */
+}
+
+.logo-center img {
+    height: 100px;
+    margin: 0 auto; /* Centra l'immagine */
+}
+.toast-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #8b008b;
+}
 /* Media Queries per dispositivi mobili */
 @media (max-width: 768px) {
     .toast-menu-button {
         display: block; /* Mostra il pulsante toast menu sui dispositivi mobili */
     }
 
-    .barra-menu ul {
+    .barra-menu .menu-left,
+    .barra-menu .menu-right {
         display: none; /* Nasconde i menu normali */
     }
 
-    .barra-menu img {
-        margin-left: auto;
-        margin-right: auto;
+    .logo-center {
+        display: flex; /* Mantieni il logo visibile */
+        justify-content: center;
+        width: 100%; /* Assicurati che occupi l'intera larghezza */
     }
+
+    .logo-center img {
+        height: 80px; /* Riduce l'altezza del logo su dispositivi mobili */
+        margin: 0; /* Centra l'immagine */
+    }
+	/* Pulsante di chiusura del toast menu */
 }
 
 @media (max-width: 480px) {
@@ -114,10 +140,11 @@ header {
         font-size: 1rem; /* Riduce la dimensione del testo nei link */
     }
 
-    .barra-menu img {
-        height: 60px; /* Riduce l'altezza del logo */
+    .logo-center img {
+        height: 60px; /* Riduce l'altezza del logo su schermi più piccoli */
     }
 }
+
 
 /* Primo contenuto */
 #home {
@@ -165,10 +192,14 @@ header {
 /* Sezione Chi siamo */
 #chisiamo {
     background-image: url('foto/team.jpg');
-    background-size: cover;
+    background-size: cover; /* Mantiene le proporzioni dell'immagine */
     background-position: center;
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Altezza piena della finestra */
+    display: flex; /* Utilizza Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 /* Riquadro base */
@@ -211,17 +242,27 @@ header {
 
 /* Media query per dispositivi mobili */
 @media (max-width: 480px) {
+    #chisiamo {
+        background-size: cover; /* Mantiene le proporzioni senza distorsioni */
+        background-position: center; /* Mantiene l'immagine centrata */
+        height: 100vh; /* Imposta l'altezza per coprire tutto lo schermo */
+        display: flex; /* Assicura che i contenuti siano centrati */
+        justify-content: center; /* Centra orizzontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+
     .riquadrobase {
         width: 90%;
+        height: auto; /* Imposta l'altezza automatica per adattarsi */
+        border-radius: 50px 50px 0px 0px; /* Stesso border-radius del .riquadroSinistra */
+        display: flex; /* Usa Flexbox per centrare il contenuto */
+        justify-content: center; /* Centra il contenuto orizzontalmente */
+        align-items: center; /* Centra il contenuto verticalmente */
     }
 
     .riquadroSinistra {
         width: 100%;
         border-radius: 50px 50px 0px 0px; /* Riduce ulteriormente la curva per schermi molto piccoli */
-    }
-
-    #chisiamo {
-        height: 50vh; /* Riduce ulteriormente l'altezza */
     }
 }
 /* Contenitore principale per centrare gli elementi */
@@ -413,14 +454,14 @@ header {
 }
 
 #recensione-form button {
-    background-color: #8b008b;
+    background-color: #DDA0DD;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #recensione-form button:hover {
-    background-color: #551a8b;
+    background-color: #e6e6fa;
 }
 
 /* Media Query per schermi più piccoli */
@@ -719,4 +760,8 @@ header {
 		color: white;
     }
 	
+	
+	
+
+
 	
