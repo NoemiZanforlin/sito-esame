@@ -268,8 +268,8 @@ header {
 /* Contenitore principale per centrare gli elementi */
 #eventiCal {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center;     /* Centra verticalmente */
     height: 100vh;
     background-color: #e6e6fa;      
     padding: 20px; /* Aggiungi un po' di padding per gli spazi */
@@ -279,8 +279,8 @@ header {
 /* Contenitore per lo slider e il calendario */
 .containerblocco {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center;     /* Centra verticalmente */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -352,6 +352,7 @@ header {
     .containerblocco {
         flex-direction: row;
         justify-content: center; /* Per assicurarsi che gli elementi rimangano centrati */
+        align-items: center; /* Mantiene centrato verticalmente */
     }
 
     #calendar-container {
@@ -370,6 +371,7 @@ header {
         align-items: center; /* Assicura che il calendario rimanga centrato anche su schermi larghi */
     }
 }
+
 #recensioni {
     display: flex; /* Imposta Flexbox per il container principale */
     flex-direction: column; /* Disposizione verticale */
@@ -760,8 +762,4 @@ header {
 		color: white;
     }
 	
-	
-	
-
-
 	
