@@ -177,13 +177,13 @@ header {
     padding-bottom: 15px;
 }
 
-.pippo {
+.paragrafo1 {
     font-size: 18px;
     line-height: 1.6; /* Aumenta l'interlinea per una migliore leggibilità */
     margin-bottom: 20px; /* Spazio sotto il paragrafo */
 }
 
-.pluto {
+.paragrafo2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase; /* Trasforma il testo in maiuscolo */
@@ -266,7 +266,8 @@ header {
         border-radius: 50px 50px 0px 0px; /* Riduce ulteriormente la curva per schermi molto piccoli */
     }
 }
-/* Contenitore principale per centrare gli elementi */
+
+/* Sezione eventi e Calendario */
 #eventiCal {
     display: flex;
     justify-content: center; /* Centra orizzontalmente */
@@ -372,7 +373,7 @@ header {
         align-items: center; /* Assicura che il calendario rimanga centrato anche su schermi larghi */
     }
 }
-
+/* Sezione Recensioni */
 #recensioni {
     display: flex; /* Imposta Flexbox per il container principale */
     flex-direction: column; /* Disposizione verticale */
