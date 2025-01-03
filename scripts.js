@@ -86,3 +86,8 @@ function generateRandomEvents() {
 
   // Optional: Add any custom JavaScript for further interaction or functionality here.
 console.log("Social media links ready!");
+
+
+
+  // Optional: Add any custom JavaScript for further interaction or functionality here.
+console.log("Social media links ready!");
