@@ -162,7 +162,7 @@ header {
 
 .riquadro {
     background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semitrasparente */
-    width: 80%; /* Larghezza dell'80% della pagina */
+    width: 60%; /* Larghezza del 60% della pagina */
     padding: 20px; /* Spaziatura interna */
     border-radius: 0px 0px 0px 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra */
@@ -173,7 +173,7 @@ header {
     color: black;
     font-size: 3rem;
     font-family: "Playfair Display", serif;
-    padding: 40px;
+    padding: 5px;
     padding-bottom: 15px;
 }
 
@@ -193,77 +193,160 @@ header {
 /* Sezione Chi siamo */
 #chisiamo {
     background-image: url('foto/team.jpg');
-    background-size: cover; /* Mantiene le proporzioni dell'immagine */
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh; /* Altezza piena della finestra */
-    display: flex; /* Utilizza Flexbox */
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenitore {
+    display: flex; /* Dispone i figli in fila */
+    justify-content: space-between; /* Spazio tra i contenitori */
+    align-items: center; /* Allinea verticalmente al centro */
+    width: 80%; /* Riduce la larghezza totale per centratura */
+    height: auto; /* Adatta l'altezza automaticamente */
 }
 
 /* Riquadro base */
 .riquadrobase {
-    background-color: white;
-    width: 50%;
-    height: 100%;
+    background-color: #faf0e6;
+    width: 30%; /* Imposta una larghezza specifica */
+    height: auto; /* Imposta una larghezza specifica */
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto; /* Centra il riquadro */
-}
-
-/* Riquadro sinistra */
-.riquadroSinistra {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 70%; /* Adattato per dispositivi più piccoli */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    justify-content: center; /* Centra verticalmente il contenuto */
+    align-items: center; /* Centra orizzontalmente il contenuto */
     padding: 20px;
-    border-radius: 150px 150px 0px 0px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Contorno luminoso */
+    border-radius: 200px; /* Forma ovale */
+    margin-right: 20px; /* Distanza tra i due riquadri */
+}
+
+.paragraforiquadro {
+    font-size: 18px;
+    font-weight: regular;
+    margin-top: 30px; /* Spazio sopra il paragrafo */
+	padding-bottom: 20px;	/* Spazio sotto il paragrafo */
+}
+
+.riquadrobase img {
+    margin-bottom: 10px; /* Spazio tra l'immagine e il testo */
+    width: 150px; /* Larghezza predefinita per schermi più grandi */
+    height: auto; /* Mantiene le proporzioni originali */
+    max-width: 100%; /* Garantisce che non superi la larghezza del contenitore */
+    display: block; /* Evita spazi vuoti indesiderati */
+}
+
+
+
+.riquadrobase h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    padding: 5px;
+    padding-bottom: 20px;	/* Spazio sotto il titolo */
+	
+}
+
+.riquadrobase p {
+    margin-top: 10px; /* Spazio sopra il paragrafo */
+}
+
+.riquadrocentro {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%; /* Larghezza metà della pagina */
+    padding: 20px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    text-align: left; /* Testo allineato a sinistra */
+    min-height: 100%; /* Altezza minima uguale all'altezza della sezione */
 }
-
-/* Media query per tablet */
-@media (max-width: 768px) {
-    .riquadrobase {
-        width: 80%;
-    }
-
-    .riquadroSinistra {
-        width: 90%;
-        border-radius: 100px 100px 0px 0px; /* Riduce la curva per schermi più piccoli */
-    }
-
-    #chisiamo {
-        height: 70vh; /* Riduce l'altezza su schermi più piccoli */
-    }
+.paragrafocentro {
+    font-size: 18px;
+    font-weight: regular;
+    margin-top: 30px; /* Spazio sopra il paragrafo */
+	padding-bottom: 20px;	/* Spazio sotto il paragrafo */
 }
-
 /* Media query per dispositivi mobili */
 @media (max-width: 480px) {
     #chisiamo {
-        background-size: cover; /* Mantiene le proporzioni senza distorsioni */
-        background-position: center; /* Mantiene l'immagine centrata */
-        height: 100vh; /* Imposta l'altezza per coprire tutto lo schermo */
-        display: flex; /* Assicura che i contenuti siano centrati */
-        justify-content: center; /* Centra orizzontalmente */
-        align-items: center; /* Centra verticalmente */
+        height: auto; /* Permette all'altezza di adattarsi ai contenuti */
+        padding: 10px; /* Aggiunge spazio interno per evitare sovrapposizioni */
+    }
+
+    .contenitore {
+        flex-direction: column; /* I riquadri sono disposti uno sopra l'altro */
+        align-items: stretch; /* Adatta i riquadri alla larghezza disponibile */
+    }
+
+    .riquadrobase,
+    .riquadrocentro {
+        width: 100%; /* Imposta la larghezza massima per dispositivi piccoli */
     }
 
     .riquadrobase {
-        width: 90%;
-        height: auto; /* Imposta l'altezza automatica per adattarsi */
-        border-radius: 50px 50px 0px 0px; /* Stesso border-radius del .riquadroSinistra */
-        display: flex; /* Usa Flexbox per centrare il contenuto */
-        justify-content: center; /* Centra il contenuto orizzontalmente */
-        align-items: center; /* Centra il contenuto verticalmente */
+        order: 2; /* Sposta il riquadro base sotto il riquadro centrale */
+        padding: 15px; /* Adatta il padding per piccoli dispositivi */
+        margin-top: 20px; /* Aggiunge spazio sopra il riquadro base */
+        border-radius: 10px; /* Riduce il bordo arrotondato per schermi piccoli */
+    }
+    .riquadrobase img {
+        width: 100px; /* Larghezza ridotta per schermi medi */
+    }
+	
+    .riquadrocentro {
+        order: 1; /* Mantiene il riquadro centrale sopra il riquadro base */
+        padding: 20px; /* Adatta il padding */
+        margin-bottom: 20px; /* Aggiunge spazio sotto il riquadro centrale */
+        min-height: auto; /* Permette al riquadro di adattarsi al contenuto */
+        border-radius: 10px; /* Riduce il bordo arrotondato per uniformità */
+    }
+}
+/* Media query per dispositivi medi */
+@media (max-width: 768px) {
+    #chisiamo {
+        height: auto; /* Adatta l'altezza ai contenuti */
+        padding: 20px; /* Aggiunge un po' di spazio interno */
     }
 
-    .riquadroSinistra {
-        width: 100%;
-        border-radius: 50px 50px 0px 0px; /* Riduce ulteriormente la curva per schermi molto piccoli */
+    .contenitore {
+        flex-direction: column; /* I riquadri sono disposti uno sopra l'altro */
+        align-items: center; /* Centra i riquadri */
+        width: 100%; /* Usa tutta la larghezza disponibile */
+    }
+
+    .riquadrobase,
+    .riquadrocentro {
+        width: 90%; /* Imposta una larghezza ridotta con margini */
+        margin-bottom: 20px; /* Spazio tra i riquadri */
+    }
+
+    .riquadrobase {
+        padding: 20px; /* Adatta il padding */
+        border-radius: 20px; /* Arrotonda leggermente gli angoli */
+    }
+
+    .riquadrobase img {
+        width: 120px; /* Larghezza moderata per dispositivi medi */
+        height: auto; /* Mantiene le proporzioni */
+    }
+
+    .riquadrocentro {
+        padding: 20px; /* Adatta il padding */
+        border-radius: 15px; /* Arrotonda leggermente gli angoli */
+        text-align: center; /* Centra il testo */
+    }
+
+    .paragraforiquadro,
+    .paragrafocentro {
+        font-size: 16px; /* Riduce leggermente la dimensione del testo */
+        line-height: 1.5; /* Migliora la leggibilità */
     }
 }
 
@@ -301,16 +384,29 @@ header {
 /* Stili per lo slider */
 .swiper-container {
     width: 100%; /* Cambia a 100% per schermi piccoli */
-    max-width: 600px; /* Limita la larghezza per schermi piccoli */
+    max-width: 800px; /* Limita la larghezza per schermi più grandi */
+    height: 400px; /* Altezza dello slider */
     overflow: hidden;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Adatta le immagini al contenitore */
 .swiper-slide img {
     width: 100%;
     height: auto; /* Mantiene il rapporto d'aspetto */
-    object-fit: cover;
+    max-width: 600px; /* Definisce una larghezza massima più grande */
+    max-height: 350px; /* Definisce un'altezza massima più grande */
+    object-fit: cover; /* Assicura che l'immagine riempia il contenitore */
+}
+
+/* Stili per lo slider */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adatta l'altezza dello slider */
 }
 
 /* Stili per la paginazione */
@@ -373,6 +469,7 @@ header {
         align-items: center; /* Assicura che il calendario rimanga centrato anche su schermi larghi */
     }
 }
+
 /* Sezione Recensioni */
 #recensioni {
     display: flex; /* Imposta Flexbox per il container principale */
