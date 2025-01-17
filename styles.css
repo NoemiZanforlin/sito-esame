@@ -1,3 +1,29 @@
+* {
+    box-sizing: border-box; /* Include padding e bordi nel calcolo della larghezza */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Impedisce lo scorrimento orizzontale */
+}
+
+/* Rimuovi eventuali padding/margini indesiderati intorno al corpo */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gestione immagini e altri contenuti */
+img, video, iframe {
+    max-width: 100%;
+    height: auto; /* Adatta le immagini alla larghezza del contenitore */
+    display: block; /* Evita spazi bianchi sotto immagini inline */
+}
+
+
+
 /* Inizio Header */
 header {
     background-color: rgba(255, 255, 255, 0.7); /* Bianco semitrasparente */
@@ -36,6 +62,16 @@ header {
     height: 100px; /* Altezza dell'immagine del logo */
     margin: 0 20px; /* Spaziatura intorno al logo */
 }
+/* Stili aggiuntivi per mantenere il logo al centro visibile su dispositivi mobili */
+.logo-center {
+    display: flex;
+    justify-content: center; /* Centra il logo orizzontalmente */
+}
+
+.logo-center img {
+    height: 100px;
+    margin: 0 auto; /* Centra l'immagine */
+}
 
 /* Nasconde il toast menu di default */
 .toast-menu {
@@ -59,7 +95,9 @@ header {
 }
 
 .toast-menu-logo img {
-    height: 80px; /* Altezza del logo nel menu mobile */
+    height: 80px;	/* Altezza del logo nel menu mobile */
+
+	
 }
 
 /* Stili per il menu toast */
@@ -93,16 +131,6 @@ header {
     display: block;
 }
 
-/* Stili aggiuntivi per mantenere il logo al centro visibile su dispositivi mobili */
-.logo-center {
-    display: flex;
-    justify-content: center; /* Centra il logo orizzontalmente */
-}
-
-.logo-center img {
-    height: 100px;
-    margin: 0 auto; /* Centra l'immagine */
-}
 .toast-menu-close {
     position: absolute;
     top: 10px;
@@ -110,40 +138,6 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
     color: #8b008b;
-}
-
-/* Media Queries per dispositivi mobili */
-@media (max-width: 768px) {
-    .toast-menu-button {
-        display: block; /* Mostra il pulsante toast menu sui dispositivi mobili */
-    }
-
-    .barra-menu .menu-left,
-    .barra-menu .menu-right {
-        display: none; /* Nasconde i menu normali */
-    }
-
-    .logo-center {
-        display: flex; /* Mantieni il logo visibile */
-        justify-content: center;
-        width: 100%; /* Assicurati che occupi l'intera larghezza */
-    }
-
-    .logo-center img {
-        height: 80px; /* Riduce l'altezza del logo su dispositivi mobili */
-        margin: 0; /* Centra l'immagine */
-    }
-	/* Pulsante di chiusura del toast menu */
-}
-
-@media (max-width: 480px) {
-    .toast-menu ul li a {
-        font-size: 1rem; /* Riduce la dimensione del testo nei link */
-    }
-
-    .logo-center img {
-        height: 60px; /* Riduce l'altezza del logo su schermi più piccoli */
-    }
 }
 
 
@@ -190,7 +184,7 @@ header {
     margin-top: 30px; /* Spazio sopra il paragrafo */
 }
 
-/* Sezione Chi siamo */
+/* Contenitore principale della sezione CHI SIAMO */
 #chisiamo {
     background-image: url('foto/team.jpg');
     background-size: cover;
@@ -203,152 +197,95 @@ header {
     align-items: center;
 }
 
+/* Contenitore per i riquadri */
 .contenitore {
-    display: flex; /* Dispone i figli in fila */
-    justify-content: space-between; /* Spazio tra i contenitori */
-    align-items: center; /* Allinea verticalmente al centro */
+    display: flex;
+    justify-content: space-between; /* Spazio tra i riquadri */
+    align-items: center; /* Allinea verticalmente i contenitori */
     width: 80%; /* Riduce la larghezza totale per centratura */
     height: auto; /* Adatta l'altezza automaticamente */
 }
 
-/* Riquadro base */
+/* Riquadro base - centrale e rotondo */
 .riquadrobase {
-    background-color: #faf0e6;
-    width: 30%; /* Imposta una larghezza specifica */
-    height: auto; /* Imposta una larghezza specifica */
-    text-align: center;
+    width: 50%; /* Occupa metà della larghezza del contenitore */
     display: flex;
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    justify-content: center; /* Centra verticalmente il contenuto */
-    align-items: center; /* Centra orizzontalmente il contenuto */
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Contorno luminoso */
-    border-radius: 200px; /* Forma ovale */
-    margin-right: 20px; /* Distanza tra i due riquadri */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+    position: relative; /* Necessario per posizionare il cerchio */
+	
 }
 
-.paragraforiquadro {
-    font-size: 18px;
-    font-weight: regular;
-    margin-top: 30px; /* Spazio sopra il paragrafo */
-	padding-bottom: 20px;	/* Spazio sotto il paragrafo */
+/* Cerchio centrale dentro riquadrobase */
+.riquadrobase .cerchio {
+  background-color: #faf0e6;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+/* Stile per il contenitore interno */
+.riquadrobase .cerchio div {
+    display: flex;
+    flex-direction: column; /* Imposta una direzione verticale per gli elementi */
+    justify-content: center; /* Allinea verticalmente al centro */
+    align-items: center; /* Allinea orizzontalmente al centro */
+    gap: 10px; /* Spaziatura tra gli elementi (opzionale) */
+
+	
 }
 
-.riquadrobase img {
-    margin-bottom: 10px; /* Spazio tra l'immagine e il testo */
-    width: 150px; /* Larghezza predefinita per schermi più grandi */
-    height: auto; /* Mantiene le proporzioni originali */
-    max-width: 100%; /* Garantisce che non superi la larghezza del contenitore */
-    display: block; /* Evita spazi vuoti indesiderati */
+/* Per l'immagine */
+.riquadrobase .cerchio div img {
+    max-width: 100%; /* Assicura che l'immagine non esca dai bordi */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
 }
 
-
-
+/* Stili per il contenuto interno del cerchio */
 .riquadrobase h2 {
     margin-bottom: 10px;
     color: black;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: "Playfair Display", serif;
-    padding: 5px;
-    padding-bottom: 20px;	/* Spazio sotto il titolo */
-	
 }
 
 .riquadrobase p {
-    margin-top: 10px; /* Spazio sopra il paragrafo */
+    font-size: 18px;
+    margin-top: 10px;
 }
 
+.riquadrobase img {
+    margin-bottom: 10px;
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+	
+}
+
+/* Riquadro centrale - occupa tutta la sua metà */
 .riquadrocentro {
     background-color: rgba(255, 255, 255, 0.8);
-    width: 50%; /* Larghezza metà della pagina */
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: left; /* Testo allineato a sinistra */
-    min-height: 100%; /* Altezza minima uguale all'altezza della sezione */
+    width: 50%; /* Occupa metà della larghezza del contenitore */
+    padding-inline: 40px;
+    text-align: left;
+    min-height: 100%; /* Altezza minima uguale alla sezione */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .paragrafocentro {
     font-size: 18px;
-    font-weight: regular;
-    margin-top: 30px; /* Spazio sopra il paragrafo */
-	padding-bottom: 20px;	/* Spazio sotto il paragrafo */
+    line-height: 1.6; /* Migliora la leggibilità */
+    margin-top: 20px;
+
 }
-/* Media query per dispositivi mobili */
-@media (max-width: 480px) {
-    #chisiamo {
-        height: auto; /* Permette all'altezza di adattarsi ai contenuti */
-        padding: 10px; /* Aggiunge spazio interno per evitare sovrapposizioni */
-    }
 
-    .contenitore {
-        flex-direction: column; /* I riquadri sono disposti uno sopra l'altro */
-        align-items: stretch; /* Adatta i riquadri alla larghezza disponibile */
-    }
-
-    .riquadrobase,
-    .riquadrocentro {
-        width: 100%; /* Imposta la larghezza massima per dispositivi piccoli */
-    }
-
-    .riquadrobase {
-        order: 2; /* Sposta il riquadro base sotto il riquadro centrale */
-        padding: 15px; /* Adatta il padding per piccoli dispositivi */
-        margin-top: 20px; /* Aggiunge spazio sopra il riquadro base */
-        border-radius: 10px; /* Riduce il bordo arrotondato per schermi piccoli */
-    }
-    .riquadrobase img {
-        width: 100px; /* Larghezza ridotta per schermi medi */
-    }
-	
-    .riquadrocentro {
-        order: 1; /* Mantiene il riquadro centrale sopra il riquadro base */
-        padding: 20px; /* Adatta il padding */
-        margin-bottom: 20px; /* Aggiunge spazio sotto il riquadro centrale */
-        min-height: auto; /* Permette al riquadro di adattarsi al contenuto */
-        border-radius: 10px; /* Riduce il bordo arrotondato per uniformità */
-    }
-}
-/* Media query per dispositivi medi */
-@media (max-width: 768px) {
-    #chisiamo {
-        height: auto; /* Adatta l'altezza ai contenuti */
-        padding: 20px; /* Aggiunge un po' di spazio interno */
-    }
-
-    .contenitore {
-        flex-direction: column; /* I riquadri sono disposti uno sopra l'altro */
-        align-items: center; /* Centra i riquadri */
-        width: 100%; /* Usa tutta la larghezza disponibile */
-    }
-
-    .riquadrobase,
-    .riquadrocentro {
-        width: 90%; /* Imposta una larghezza ridotta con margini */
-        margin-bottom: 20px; /* Spazio tra i riquadri */
-    }
-
-    .riquadrobase {
-        padding: 20px; /* Adatta il padding */
-        border-radius: 20px; /* Arrotonda leggermente gli angoli */
-    }
-
-    .riquadrobase img {
-        width: 120px; /* Larghezza moderata per dispositivi medi */
-        height: auto; /* Mantiene le proporzioni */
-    }
-
-    .riquadrocentro {
-        padding: 20px; /* Adatta il padding */
-        border-radius: 15px; /* Arrotonda leggermente gli angoli */
-        text-align: center; /* Centra il testo */
-    }
-
-    .paragraforiquadro,
-    .paragrafocentro {
-        font-size: 16px; /* Riduce leggermente la dimensione del testo */
-        line-height: 1.5; /* Migliora la leggibilità */
-    }
-}
 
 /* Sezione eventi e Calendario */
 #eventiCal {
@@ -356,7 +293,7 @@ header {
     justify-content: center; /* Centra orizzontalmente */
     align-items: center;     /* Centra verticalmente */
     height: 100vh;
-    background-color: #e6e6fa;      
+    background-color: #f0ece2;      
     padding: 20px; /* Aggiungi un po' di padding per gli spazi */
     flex-direction: column; /* Cambia a colonna per dispositivi mobili */
 }
@@ -364,30 +301,34 @@ header {
 /* Contenitore per lo slider e il calendario */
 .containerblocco {
     display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center;     /* Centra verticalmente */
+    justify-content: space-between; /* Spazio tra slider e calendario */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    flex-direction: column; /* Disporre in colonna per schermi piccoli */
+    flex-direction: row; /* Disporre in riga gli elementi principali */
+    gap: 20px; /* Aggiunge spazio tra gli elementi */
 }
 
 /* Stili per lo slider */
 .slider-container {
-    flex: 1;
+    flex: 1; /* Permette allo slider di occupare spazio proporzionale */
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 600px; /* Limita la larghezza per schermi piccoli */
+    justify-content: center;
+    width: 50%; /* Assegna una larghezza iniziale */
+    max-width: 600px;
 }
 
 /* Stili per lo slider */
 .swiper-container {
-    width: 100%; /* Cambia a 100% per schermi piccoli */
-    max-width: 800px; /* Limita la larghezza per schermi più grandi */
-    height: 400px; /* Altezza dello slider */
+    flex: 1;
+    width: 50%; /* Assegna il 50% della larghezza */
+    max-width: 600px; /* Imposta una larghezza massima */
+	min-width: 300px; /* Imposta una larghezza minima */
+    height: auto; /* Adatta l'altezza in base al contenuto */
     overflow: hidden;
     display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -395,10 +336,9 @@ header {
 /* Adatta le immagini al contenitore */
 .swiper-slide img {
     width: 100%;
-    height: auto; /* Mantiene il rapporto d'aspetto */
-    max-width: 600px; /* Definisce una larghezza massima più grande */
-    max-height: 350px; /* Definisce un'altezza massima più grande */
-    object-fit: cover; /* Assicura che l'immagine riempia il contenitore */
+    height: auto;
+    object-fit: cover; /* Mantiene il rapporto d'aspetto delle immagini */
+    max-height: 400px; /* Imposta un'altezza massima */
 }
 
 /* Stili per lo slider */
@@ -416,12 +356,13 @@ header {
 
 #calendar-container {
     flex: 1;
+    width: 50%; /* Assegna il 50% della larghezza */
+    max-width: 600px; /* Imposta una larghezza massima */
+	min-width: 300px; /* Imposta una larghezza minima */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Mantiene il calendario centrato */
-    width: 100%;
-    max-width: 600px; /* Limita la larghezza massima del calendario */
-    margin-top: 20px; /* Aggiungi un margine per distanziare dallo slider */
+    align-items: center;
+    margin-top: 0; /* Rimuove margini superiori */
 }
 
 #calendar {
@@ -432,43 +373,13 @@ header {
 /* Stili per il riquadro base */
 .riquadrobasecalendario {
     background-color: #e6e6fa;
-    width: 40px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* Aggiunge uno spazio tra il riquadro e gli altri elementi */
+
 }
 
-/* Media Queries per dispositivi di diverse dimensioni */
-@media (min-width: 768px) {
-    /* Schermi medi (tablet) */
-    #eventiCal {
-        flex-direction: row;
-    }
 
-    .containerblocco {
-        flex-direction: row;
-        justify-content: center; /* Per assicurarsi che gli elementi rimangano centrati */
-        align-items: center; /* Mantiene centrato verticalmente */
-    }
-
-    #calendar-container {
-        align-items: center; /* Mantiene il calendario centrato anche su schermi medi */
-    }
-}
-
-@media (min-width: 1024px) {
-    /* Schermi larghi (desktop) */
-    .swiper-container {
-        width: 50%; /* Ritorna alla larghezza iniziale */
-    }
-
-    #calendar-container {
-        width: 50%;
-        align-items: center; /* Assicura che il calendario rimanga centrato anche su schermi larghi */
-    }
-}
 
 /* Sezione Recensioni */
 #recensioni {
@@ -476,7 +387,7 @@ header {
     flex-direction: column; /* Disposizione verticale */
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra orizzontalmente */
-    background-color: #faf0e6;
+    background-color: #f0ece2;
     background-size: cover; /* Copre tutta l'area disponibile */
     background-position: center; /* Centra l'immagine di sfondo */
     width: 100%; /* Larghezza dell'intera pagina */
@@ -565,48 +476,6 @@ header {
     background-color: #e6e6fa;
 }
 
-/* Media Query per schermi più piccoli */
-@media (max-width: 768px) {
-    .reviews-container {
-        flex-direction: column; /* Stack le recensioni e il form verticalmente */
-        align-items: center; /* Centra le recensioni e il form */
-        padding: 10px;
-        gap: 20px;
-    }
-
-    .review {
-        padding: 15px;
-        max-width: 100%; /* Lascia che le recensioni prendano tutta la larghezza disponibile */
-    }
-
-    #recensione-form {
-        max-width: 100%; /* Lascia che il form prenda tutta la larghezza disponibile */
-    }
-}
-
-@media (max-width: 480px) {
-    /* Adatta il layout per schermi ancora più piccoli */
-    .review-header img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .review-info h3 {
-        font-size: 0.9em;
-    }
-
-    #recensione-form input, 
-    #recensione-form textarea, 
-    #recensione-form select, 
-    #recensione-form button {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-
-    #recensione-form button {
-        font-size: 0.9em;
-    }
-}
 
 
  #dovesiamo {
@@ -727,13 +596,6 @@ header {
     background-color: #e6e6fa;
 }
 
-/* Media query per migliorare la responsività */
-@media (max-width: 768px) {
-    .form-contatti-custom {
-        padding: 20px; /* Riduce il padding su schermi piccoli */
-    }
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -784,14 +646,6 @@ header {
     background-color: #555;
 }
 
-/* Media query per la responsività */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column; /* Dispone i div in colonna su schermi piccoli */
-        text-align: center; /* Centra il contenuto sui dispositivi mobili */
-    }
-}
-
 
 /* Specifica i colori per ogni icona al passaggio del mouse */
 #facebook:hover {
@@ -809,9 +663,50 @@ header {
 #linkedin:hover {
     background-color: #DDA0DD;
 }
-/* Stili per dispositivi con larghezza massima di 768px (tablet e telefoni in landscape) */
+
+
+
+	
+	
+	
+	
+	
+	
+/* PARTE RESPONSIVE */
+
+
+/* Responsività */
+@media screen and (max-width: 1200px) {
+    .contenitore, 
+    .reviews-container {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        gap: 20px;
+    }
+
+    .riquadrobase, 
+    .riquadrocentro, 
+    .slider-container, 
+    #calendar-container {
+        width: 100%; /* Rendi i contenitori a larghezza piena */
+    }
+
+    .review, 
+    #recensione-form {
+        max-width: 100%; /* Rimuove la larghezza massima fissa */
+    }
+}
+
 @media screen and (max-width: 768px) {
-    #contatti h1 {
+
+
+    .toast-menu-button {
+        display: block; /* Mostra il pulsante per il menu */
+        font-size: 1.5rem; /* Dimensiona il pulsante */
+        cursor: pointer;
+        margin-top: 10px;
+    }
+	
+	 #contatti h1 {
         padding-top: 150px;
         margin-top: -130px;
         font-size: 1.5em;
@@ -833,11 +728,97 @@ header {
         max-width: 250px;
         padding: 10px;
     }
+	
+    .barra-menu ul {
+        flex-direction: column; /* Dispone i link verticalmente */
+        align-items: center; /* Centra i link */
+    }
+
+    .barra-menu img {
+        height: 70px; /* Riduce la dimensione del logo */
+    }
+
+    .riquadro {
+        width: 90%; /* Riduce la larghezza del contenitore */
+    }
+
+    .slider-container,
+    .swiper-container,
+    #calendar-container {
+        max-width: 100%; /* Adatta alla larghezza del dispositivo */
+    }
+	
+	.swiper-container,
+    #calendar-container {
+        width: 100%; /* Usa tutta la larghezza disponibile */
+        max-width: 100%; /* Rimuove la larghezza massima */
+    }
+
+    .swiper-slide img {
+        max-height: 300px; /* Riduce l'altezza delle immagini */
+    }
+	
+	#calendar-container {
+        margin-top: 20px; /* Aggiunge spazio sopra il calendario */
+    }
+
+    .contenitore {
+        padding: 10px; /* Aggiunge margine interno */
+    }
+	
+    .sezione {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .riquadrocentro {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+        min-height:40%;
+        max-height: 600px; /* Imposta un'altezza massima per evitare che l'elemento si espanda troppo */
+    }
+
+    /* Aggiungi margine sopra il riquadrobase per una separazione migliore */
+    .riquadrobase {
+        margin-top: 20px;
+		width: 100%;
+        text-align: center;
+        margin-bottom: 20px;        
+        max-height: 600px; /* Imposta un'altezza massima per evitare che l'elemento si espanda troppo */
+    }
+
+    .paragrafocentro {
+        text-align: center;
+        max-height: 200px; /* Limita l'altezza della sezione paragrafo */
+        overflow: hidden; /* Assicura che il testo in eccesso non esca dal contenitore */
+    }
+	
+	#eventiCal {
+        flex-direction: column; /* Disposizione verticale */
+        height: auto; /* Altezza adattabile */
+        padding: 20px;
+    }
+	
+	.containerblocco {
+        flex-direction: column; /* Cambia da riga a colonna */
+        align-items: center; /* Centra gli elementi */
+        gap: 20px; /* Spaziatura tra gli elementi */
+    }
+	.footer-content {
+        flex-direction: column; /* Cambia direzione degli elementi in colonna */
+        align-items: center; /* Allinea tutto al centro */
+    }
+
+    .social-media-links {
+        justify-content: center; /* Centra le icone orizzontalmente */
+        margin: 0 auto; /* Centra l'intero contenitore */
+    }
 }
 
-/* Stili per dispositivi con larghezza massima di 480px (telefoni in portrait) */
 @media screen and (max-width: 480px) {
-    #contatti h1 {
+	#contatti h1 {
         padding-top: 100px;
         margin-top: -80px;
         font-size: 1.2em;
@@ -861,4 +842,48 @@ header {
 		color: white;
     }
 	
+    .toast-menu-button {
+        display: block; /* Mostra il pulsante per i menu mobili */
+    }
+
+    .barra-menu ul {
+        display: none; /* Nasconde i link per usare il menu toast */
+    }
 	
+	#miologo {
+        display: block; /* Nasconde i link per usare il menu toast */
+    }
+
+    .toast-menu {
+        display: block; /* Mostra il menu toast di default */
+		display: none;
+    }
+
+	.logo-center {
+		display: flex;
+		justify-content: center; /* Centra il logo orizzontalmente */
+	}
+
+	.logo-center img {
+        height: 50px; /* Riduce il logo su schermi molto piccoli */
+		margin: 0 auto; /* Centra l'immagine */
+    }
+
+    .riquadro h1 {
+        font-size: 2rem; /* Riduce la dimensione del titolo */
+    }
+
+    .paragrafo1, .paragrafo2 {
+        font-size: 16px; /* Riduce la dimensione del testo */
+    }
+	.paragrafocentro {
+        font-size: 14px; /* Riduce la dimensione del testo */
+    }
+
+    #dovesiamo .riquadrodovesiamo, 
+    .form-contatti-custom {
+        width: 100%; /* Rendi il contenitore a larghezza piena */
+        padding: 10px; /* Riduce il padding per adattarsi meglio */
+    }
+}
+
