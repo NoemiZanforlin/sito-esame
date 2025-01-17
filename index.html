@@ -25,15 +25,15 @@
     <!-- Header con menu toast -->
     <header>
         <div class="barra-menu">
-            <ul class="menu-left">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#chisiamo">Chi Siamo</a></li>
                 <li><a href="#eventiCal">Servizi e Calendario</a></li>
             </ul>
-            <ul class="logo-center">
-                <li><img src="logo.png" height="100px" alt="Logo"></li>
+            <ul class="logo-center" id="miologo">
+                <img src="logo.png" height="100px" alt="Logo">
             </ul>
-            <ul class="menu-right">
+            <ul>
                 <li><a href="#recensioni">Recensioni</a></li>
                 <li><a href="#dovesiamo">Dove siamo</a></li>
                 <li><a href="#contatti">Contatti</a></li>
@@ -43,15 +43,15 @@
         </div>
     </header>
 	
-<!-- Toast Menu -->
-<div class="toast-menu">
-    <!-- Logo nel menu mobile -->
-    <div class="toast-menu-logo">
-        <img src="logo.png" height="100px" alt="Logo">
-    </div>
+    <!-- Toast Menu -->
+        <div class="toast-menu">
+          <!-- Logo nel menu mobile -->
+        <div class="toast-menu-logo">
+            <img src="logo.png" height="100px" alt="Immagine logo del team di L'Amour">
+       </div>
     <!-- Pulsante di chiusura -->
-    <div class="toast-menu-close">&#10006;</div>
-    <ul>
+         <div class="toast-menu-close">&#10006;</div>
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#chisiamo">Chi Siamo</a></li>
         <li><a href="#eventiCal">Calendario e eventi</a></li> <!-- Assicurati che questo ID sia presente -->
@@ -60,18 +60,8 @@
         <li><a href="#contatti">Contatti</a></li>
     </ul>
 
-</div>
+        </div>
 
-
-    <!-- Includi il tuo JavaScript alla fine del body -->
-    <script>
-        $(document).ready(function() {
-            // Inizializzazione del menu mobile
-            $('.toast-menu-button').on('click', function() {
-                $('.toast-menu').toggleClass('active');
-            });
-		});
-    </script>
 
     <!-- Content Section -->
     <div class="sezione" id="home">
@@ -83,94 +73,96 @@
     </div>
 	
 	
-			<!--Sezione Chi siamo-->
-            <div class="sezione" id="chisiamo">
-               <div class="contenitore">
-                 <div class="riquadrobase">
-				 <h2>Chi siamo</h2>
-                 <img src="foto/scrittalogo.png" alt="Logo">
-				 <p class="paragraforiquadro">
-                   <br>Noi di L'Amour, siamo un'attività
-				   <br>a conduzione familiare. 
-				   <br>
-                   <br>Da venticinque anni ad oggi, ci occupiamo 
-                   <br>della preparazione di eventi 
-                   <br>e cerimonie matrimoniali.
-                </p>
-            </div>
-               <div class="riquadrocentro">
-			   <p class="paragrafocentro">
-			     All'interno del nostro team, abbiamo ruoli e mansioni 
-                <br>di ogni tipo, adeguate e perfezionate
-                <br>per un servizio impeccabile.
-                <br>Fotografi, decoratori, truccatori e persino
-                <br>tecnici del suono. 
-                <br>Ognuno di noi, lavora per poter progettare,
-                <br>insieme, il vostro matrimonio perfetto.
-               </p>
-            </div>
-         </div>
+	<!--Sezione Chi siamo-->
+    <div class="sezione" id="chisiamo">
+
+    <!-- Riquadro base -->
+    <div class="riquadrobase">
+      <div class="cerchio">
+        <div>
+          <h2>Chi siamo</h2>
+          <img src="foto/scrittalogo.png" alt="L'Amour">
+          <p>Noi di L'Amour, siamo un'attività a conduzione familiare. <br>
+            Da venticinque anni ad oggi, ci occupiamo della preparazione di eventi e cerimonie matrimoniali.
+          </p>
         </div>
+      </div>
+    </div>
+	
+
+    <!-- Riquadro centro -->
+    <div class="riquadrocentro">
+	  <div>
+      <h2>La nostra attività</h2>
+      <p class="paragrafocentro">
+        Il nostro team di collaboratori ha al suo interno tanti importanti ruoli, 
+		<br>tutti strutturati e disposti per lo studio, preparazione e creazione del vostro giorno perfetto. 
+		<br>Fotografi, decoratori, fioristi e sarti, ogni piccolo dettaglio verrà gestito da noi! 
+      </p>
+      </div>
+    </div>
+   </div>
+
 
 	
-                <!-- sezione eventi e Calendario -->
-                <div id="eventiCal">
-                <div class="containerblocco">
-                   <!-- Slider delle immagini -->
-                    <div class="swiper-container">
+    <!-- sezione eventi e Calendario -->
+      <div id="eventiCal">
+        <div class="containerblocco">
+        <!-- Slider delle immagini -->
+          <div class="swiper-container">
                       <div class="swiper-wrapper">
                       <div class="swiper-slide"><img src="foto/wedding-photo1.jpg" alt="Foto 1"></div>
                       <div class="swiper-slide"><img src="foto/wedding-photo2.jpg" alt="Foto 2"></div>
                       <div class="swiper-slide"><img src="foto/wedding-photo3.jpg" alt="Foto 3"></div>
-                </div>
+          </div>
            
             </div>
 		      <div class="riquadrobasecalendario">
 			  </div>
         
-                <!-- Calendario con eventi -->
-               <div id="calendar-container">
-			   <div style="margin-bottom: 15px;">
-                  <label for="date-selector">Vai a una data:</label>
-                  <input type="date" id="date-selector" />
-                  </div>
-               <div id="calendar"></div>
-            </div>
+    <!-- Calendario con eventi -->
+      <div id="calendar-container">
+	     <div style="margin-bottom: 15px;">
+            <label for="date-selector">Vai a una data:</label>
+            <input type="date" id="date-selector" />
+        </div>
+	   <div id="calendar"></div>
+      </div>
   
        </div>
 	  </div>
 
-     <!-- Caricamento del file JavaScript -->
-    <script src="scripts.js"></script>
+        <!-- Caricamento del file JavaScript -->
+        <script src="scripts.js"></script>
 	
-<!-- Sezione Recensioni -->
-<div class="sezione" id="recensioni">
-    <div class="reviews-container">
+    <!-- Sezione Recensioni -->
+      <div class="sezione" id="recensioni">
+       <div class="reviews-container">
         <div class="review">
-            <div class="review-header">
-                <img src="foto/Elisa Fontana.jpg" alt="Ely">
-                <div class="review-info">
-                    <h3>Elisa Fontana</h3>
-                    <div class="rating">
+           <div class="review-header">
+            <img src="foto/Elisa Fontana.jpg" alt="Ely">
+            <div class="review-info">
+             <h3>Elisa Fontana</h3>
+             <div class="rating">
                         &#9733;&#9733;&#9733;&#9733;&#9734;
-                    </div>
-                </div>
+             </div>
             </div>
+          </div>
             <blockquote>
                 "Io e mio marito abbiamo ricevuto tantissimi complimenti per la bellissima cerimonia del nostro matrimonio. Siamo stati felicissimi di poter dire di esserci affidati ai migliori organizzatori di eventi!"
             </blockquote>
         </div>
 
         <div class="review">
-            <div class="review-header">
-                <img src="foto/Giulio&Alice.jpg" alt="G&A">
-                <div class="review-info">
-                    <h3>Giulio & Alice</h3>
-                    <div class="rating">
+           <div class="review-header">
+            <img src="foto/Giulio&Alice.jpg" alt="G&A">
+            <div class="review-info">
+             <h3>Giulio & Alice</h3>
+             <div class="rating">
                         &#9733;&#9733;&#9733;&#9733;&#9733;
-                    </div>
-                </div>
+             </div>
             </div>
+          </div>
             <blockquote>
                 "Il nostro è stato un matrimonio da favola. Il team è riuscito a unire tutti i nostri desideri, dalla musica alle decorazioni. Nonostante i grandi imprevisti, sono riusciti a rendere la giornata meravigliosa!"
             </blockquote>
@@ -194,29 +186,30 @@
 
             <button type="submit">Invia Recensione</button>
         </form>
+       </div>
     </div>
-</div>
 
 
 
-            <!--Sezione Dove siamo-->
-			<div class="sezione" id="dovesiamo">
-				
+    <!--Sezione Dove siamo-->
+	  <div class="sezione" id="dovesiamo">
 				<div class="riquadrodovesiamo">
 				<p class="titolo">Dove ci troviamo?</p>
 				<p class="indicazioni">Ci troviamo a Volterra, luogo dai paesaggi meravigliosi e solari!<br>
 				Nella nostra sede, potrete visionare dal vivo tutte le nostre proposte per i vostri eventi.<br> 
-				Avrete l'occasione di visitare l'antica cascina nel qual si trovano i nostri laborativo e coloro che lavorano alla progettazione del ostro giorno speciale.</p>
+				Avrete l'occasione di visitare l'antica cascina nel qual si trovano i nostri laborativo e coloro che lavorano alla progettazione del vostro giorno speciale.</p>
 				<div class="simbolomappa">
 				<a href="https://maps.app.goo.gl/sabV5ackjYNYTDMeA"><i class="fa-solid fa-map-location-dot"></i></a>
 				</div>
 			 </div>
-			</div>
+	</div>
 		
 			
-			<!--Sezione Contatti-->
-<div class="sezione" id="contatti">
-    <div id="contatti-form" class="formcontatti">
+	
+	
+	<!--Sezione Contatti-->
+      <div class="sezione" id="contatti">
+      <div id="contatti-form" class="formcontatti">
         <form action="#" method="post" class="form-contatti-custom">
             <p class="contatto">Vorresti rimanere in contatto con noi?</p>
             <div class="form-group">
@@ -233,14 +226,15 @@
             </div>
             <button type="submit">Invia</button>
         </form>
-    </div>
-</div><!--chiudeSezione Contatti-->
-
-<div class="footer">
-    <div class="footer-content">
-        <div>
-            <p class="testofooter"> &#169; Noemi Zanforlin | L'amour - Wedding Planner | +39 1234567890</p>
-        </div>
+      </div>
+      </div>
+	  
+	<!--chiudeSezione Contatti-->
+    <div class="footer">
+      <div class="footer-content">
+      <div>
+        <p class="testofooter"> &#169; Noemi Zanforlin | L'amour - Wedding Planner | +39 1234567890</p>
+      </div>
            <div>
             <div class="social-media-links">
                 <a href="https://www.facebook.com" target="_blank" class="social-link" id="facebook">
@@ -257,14 +251,10 @@
                 </a>
             </div>
           </div>
+      </div>
     </div>
-</div>
 
 
-
-    <script src="scripts.js"></script>
-</body>
-</html>
 
     <script src="scripts.js"></script>
 </body>
