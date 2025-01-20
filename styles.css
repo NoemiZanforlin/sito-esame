@@ -810,7 +810,9 @@ header {
         flex-direction: column; /* Cambia direzione degli elementi in colonna */
         align-items: center; /* Allinea tutto al centro */
     }
-
+.testofooter{
+         font-size: 12px;
+    }
     .social-media-links {
         justify-content: center; /* Centra le icone orizzontalmente */
         margin: 0 auto; /* Centra l'intero contenitore */
