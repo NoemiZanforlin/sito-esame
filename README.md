@@ -26,9 +26,11 @@ Il sito è diviso in sezioni:
 <li>FOOTER</a></li>
 
 <h1><b></b>Test</h1>
-<li><h4><b></b>GTMATRIX</h4></li>
+<h4><b></b>GTMATRIX</h4>
      <li>https://gtmetrix.com/reports/lamour-noemizanforlin.netlify.app/CIW7x45q/</a></li>
-     <li>al numero: +39 1234567890</a></li>
-     <li>puoi anche trovarci a Volterra, in via Giulio Cesare n° 8</a></li>
-<h3><b></b>Caratteristiche</h3>
-
+<h4><b></b>PageSpeed Insights</h4>
+     <li>https://pagespeed.web.dev/analysis/https-lamour-noemizanforlin-netlify-app/2bxlajlyxe?hl=it&form_factor=mobile</a></li>
+<h4><b></b>SEO</h4>
+     <li>https://suite.seotesteronline.com/seo-checker/aHR0cHM6Ly9sYW1vdXItbm9lbWl6YW5mb3JsaW4ubmV0bGlmeS5hcHAv/</a></li>
+<h4><b></b>Responsive</h4>
+     <li>inserendo il link di netifly: https://lamour-noemizanforlin.netlify.app/ - sarà possibile visionare il sito attraverso diverse apparecchiature.</a></li>
