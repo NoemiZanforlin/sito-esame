@@ -4,18 +4,28 @@
 <li>Studente: Noemi Zanforlin</a></li>
 <li>Matricola: n°967</a></li>
 <li>Docente: Matteo Baccan</a></li>
+
 <h1><b></b>Progetto</h1>
 </p>Il progetto si basa sulla creazione di un sito web mono-pagina, responsive. Costruito tramite l'utilizzo di HTML, CSS e Javascript.<br>
      Ecco qui il link: https://lamour-noemizanforlin.netlify.app/</p>
-<h3><b></b>Elementi principali</h3>
 
-</p>L'amour si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partendo dagli addobbi, location, fotografo, e qualsiasi altro ruolo inerente.</p>
-</p>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile"</p>
+<h1><b></b>Piattaforme</h1>
+<li>github.com: questa è la piattaforma principale con cui ci siamo interfacciati. Qui possiamo trovare tutte le pagine per la struttura della nostra pagina, dalla struttura alla grafica di questo.</a></li>
+<li>netifly.com: piattaforma tramite cui abbiamo modo di valutare visivamenteb che il nostro sito stia prendendo forma in maniera corretta. Possiamo vedere tutte le modifiche che eseguiamo nella piattaforma precedente.</a></li>
+<li>notepad++: si tratta di una programma che funziona offline, ci permette di continuare a lavorare al nostro codice, html/css/script, attraverso una funzione offline. </a></li>
 
-<h3><b></b>Blog e notizie</h3>
-</p>Sul nostro blog e possibile trovare tutte le nostre offerte e i nostri servizi. Seguendo le sezioni, si ha la possibilità di poter visionare un calendario per eventi e anche quella di leggere alcune tra le nostre recensioni.  All'interno, è anche possibile trovare alcuni tra i nostri lavori.</p>
+<h1><b></b>Caratteristiche del sito we</h1>
+</p>Il progetto si basa sulla creazione di un sito web mono-pagina, responsive. Costruito tramite l'utilizzo di HTML, CSS e Javascript.<br>
+Possiamo trovare:
+<li>ACME Novara : anno accademico 2023-2024</a></li>
+<li>Corso: WebDesign</a></li>
+<li>Studente: Noemi Zanforlin</a></li>
+<li>Matricola: n°967</a></li>
+<li>Docente: Matteo Baccan</a></li>
 
-<h3><b></b>Testimonial</h3>
+</p>Si tratta di un sito web mono-pagina, con funzionalità responsive.</p>
+
+<h1><b></b>Testimonial</h1>
 </p>Le nostre recesioni, sono la nostra testimonianza migliore. I nostri clienti, spesso ci lasciano alcuni riferimenti che hanno gradito della loro giornata con noi.</p>
 
 </p>Per maggiori informazioni è possibile contattarci alle segeunti voci:</p>
