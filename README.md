@@ -14,7 +14,7 @@
 <li>netifly.com: piattaforma tramite cui abbiamo modo di valutare visivamenteb che il nostro sito stia prendendo forma in maniera corretta. Possiamo vedere tutte le modifiche che eseguiamo nella piattaforma precedente.</a></li>
 <li>notepad++: si tratta di una programma che funziona offline, ci permette di continuare a lavorare al nostro codice, html/css/script, attraverso una funzione offline. </a></li>
 
-<h1><b></b>Caratteristiche del sito we</h1>
+<h1><b></b>Caratteristiche del sito web</h1>
 </p>Il progetto si basa sulla creazione di un sito web mono-pagina, responsive. Costruito tramite l'utilizzo di HTML, CSS e Javascript.<br>
 Il sito è diviso in sezioni:
 <li>Sezione Home: informazioni basilari e il burger menù, programmato attraverso l'utilizzo del codice javascript</a></li>
@@ -25,11 +25,9 @@ Il sito è diviso in sezioni:
 <li>Sezione Contatti</a></li>
 <li>FOOTER</a></li>
 
-<h1><b></b>Testimonial</h1>
-</p>Le nostre recesioni, sono la nostra testimonianza migliore. I nostri clienti, spesso ci lasciano alcuni riferimenti che hanno gradito della loro giornata con noi.</p>
-
-</p>Per maggiori informazioni è possibile contattarci alle segeunti voci:</p>
-     <li>al nostro indirizzo mail: lamourweddings@gmail.com</a></li>
+<h1><b></b>Test</h1>
+<li><h4><b></b>GTMATRIX</h4></li>
+     <li>https://gtmetrix.com/reports/lamour-noemizanforlin.netlify.app/CIW7x45q/</a></li>
      <li>al numero: +39 1234567890</a></li>
      <li>puoi anche trovarci a Volterra, in via Giulio Cesare n° 8</a></li>
 <h3><b></b>Caratteristiche</h3>
