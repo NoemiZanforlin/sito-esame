@@ -16,14 +16,14 @@
 
 <h1><b></b>Caratteristiche del sito we</h1>
 </p>Il progetto si basa sulla creazione di un sito web mono-pagina, responsive. Costruito tramite l'utilizzo di HTML, CSS e Javascript.<br>
-Possiamo trovare:
-<li>ACME Novara : anno accademico 2023-2024</a></li>
-<li>Corso: WebDesign</a></li>
-<li>Studente: Noemi Zanforlin</a></li>
-<li>Matricola: n°967</a></li>
-<li>Docente: Matteo Baccan</a></li>
-
-</p>Si tratta di un sito web mono-pagina, con funzionalità responsive.</p>
+Il sito è diviso in sezioni:
+<li>Sezione Home: informazioni basilari e il burger menù, programmato attraverso l'utilizzo del codice javascript</a></li>
+<li>Sezione Chi siamo: informazioni basilari per conoscersi</a></li>
+<li>Sezione Servizi e Calendario: qui è possibile trovare uno slider e un calendario randomico per eventi (gestiti attraverso il codice javascript)</a></li>
+<li>Sezione Recensioni</a></li>
+<li>Sezione Dove siamo</a></li>
+<li>Sezione Contatti</a></li>
+<li>FOOTER</a></li>
 
 <h1><b></b>Testimonial</h1>
 </p>Le nostre recesioni, sono la nostra testimonianza migliore. I nostri clienti, spesso ci lasciano alcuni riferimenti che hanno gradito della loro giornata con noi.</p>
