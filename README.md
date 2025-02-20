@@ -4,7 +4,7 @@
 <li>Studente: Noemi Zanforlin</a></li>
 <li>Matricola: n°967</a></li>
 <li>Docente: Matteo Baccan</a></li>
-<h3><b></b>Progetto</h3>
+<h1><b></b>Progetto</h1>
 </p>Il progetto si basa sulla creazione di un sito web mono-pagina, responsive. Costruito tramite l'utilizzo di HTML, CSS e Javascript.<br>
      Ecco qui il link: https://lamour-noemizanforlin.netlify.app/</p>
 <h3><b></b>Elementi principali</h3>
