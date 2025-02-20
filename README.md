@@ -2,8 +2,14 @@
 <li>ACME Novara : anno accademico 2023-2024</a></li>
 <li>Corso: WebDesign</a></li>
 <li>Studente: Noemi Zanforlin</a></li>
+<li>Matricola: n°967</a></li>
 <li>Docente: Matteo Baccan</a></li>
+<h3><b></b>Progetto</h3>
+</p>Il progetto si basa sulla creazione di un sito web mono-pagina, responsive. Costruito tramite l'utilizzo di HTML, CSS e Javascript.<b>
+     Ecco qui il link: https://lamour-noemizanforlin.netlify.app/
+</b></p>
 <h3><b></b>Elementi principali</h3>
+
 </p>L'amour si occcupa di organizzare cerimonie, in ogni piccolo dettaglio. Ci occupaimo di tutto il percorso "matrimoniale". Partendo dagli addobbi, location, fotografo, e qualsiasi altro ruolo inerente.</p>
 </p>Il nostro motto: "Ogni dettaglio su misura, per il vostro giorno indimenticabile"</p>
 
