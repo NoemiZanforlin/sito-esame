@@ -807,6 +807,7 @@ header {
         gap: 20px; /* Spaziatura tra gli elementi */
     }
 	.footer-content {
+        justify-content: center; /* Centra le icone orizzontalmente */
         flex-direction: column; /* Cambia direzione degli elementi in colonna */
         align-items: center; /* Allinea tutto al centro */
     }
